@@ -1,0 +1,2774 @@
+---------------------------------------------------------------
+[ 2018-08-01T09:52:46+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] sp.com/favicon.ico [运行时间：0.612694s][吞吐率：1.63req/s] [内存消耗：2,113.51kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004953s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/api/home/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.016484s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:09+08:00 ] 127.0.0.1 GET /
+[ info ] sp.com/ [运行时间：1.223158s][吞吐率：0.82req/s] [内存消耗：4,722.55kb] [文件加载：84]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003830s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004317s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.013922s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ C:\xampp\htdocs\smart_property\app\portal\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal\\index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011583s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013851s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.014749s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.003143s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000847s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000927s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002172s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000967s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.001965s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002137s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.001880s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000812s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.003350s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.027550s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002236s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.013039s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cmf_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_nav_menu` [ RunTime:0.014433s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.018746s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.010902s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `cmf_portal_post` `post` INNER JOIN `cmf_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1533091209 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.010326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.013487s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.001682s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:10+08:00 ] 127.0.0.1 POST /user/index/islogin.html
+[ info ] sp.com/user/index/islogin.html [运行时间：0.346324s][吞吐率：2.89req/s] [内存消耗：3,339.84kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004107s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://sp.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003309s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002344s ]
+[ info ] [ RUN ] app\user\controller\IndexController->isLogin[ C:\xampp\htdocs\smart_property\app\user\controller\IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012165s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.032452s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:13+08:00 ] 127.0.0.1 GET /admin
+[ info ] sp.com/admin [运行时间：0.164165s][吞吐率：6.09req/s] [内存消耗：3,402.86kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003348s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003185s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.035006s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012994s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013379s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:13+08:00 ] 127.0.0.1 GET /admin/public/login.html
+[ info ] sp.com/admin/public/login.html [运行时间：0.347254s][吞吐率：2.88req/s] [内存消耗：3,672.45kb] [文件加载：70]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004310s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003715s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ C:\xampp\htdocs\smart_property\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002203s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.012492s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:14+08:00 ] 127.0.0.1 GET /admin
+[ info ] sp.com/admin [运行时间：0.364596s][吞吐率：2.74req/s] [内存消耗：3,402.97kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003496s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003028s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.012338s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002599s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.008969s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:14+08:00 ] 127.0.0.1 GET /admin/public/login.html
+[ info ] sp.com/admin/public/login.html [运行时间：0.339914s][吞吐率：2.94req/s] [内存消耗：3,672.45kb] [文件加载：70]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003376s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001778s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ C:\xampp\htdocs\smart_property\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012162s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.034746s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:15+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.293115s][吞吐率：3.41req/s] [内存消耗：2,127.23kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002917s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001734s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:25+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.30280067661920307
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18&time=0.30280067661920307 [运行时间：0.255839s][吞吐率：3.91req/s] [内存消耗：2,127.52kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003089s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.30280067661920307',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001918s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:26+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.19056335568462512
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18&time=0.19056335568462512 [运行时间：0.268603s][吞吐率：3.72req/s] [内存消耗：2,127.56kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005611s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.19056335568462512',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001755s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:28+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703 [运行时间：0.257880s][吞吐率：3.88req/s] [内存消耗：2,127.53kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002909s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.21853652898798703',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001746s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:37+08:00 ] 127.0.0.1 POST /admin/public/dologin.html
+[ info ] sp.com/admin/public/dologin.html [运行时间：0.301789s][吞吐率：3.31req/s] [内存消耗：3,435.93kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005080s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '68',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin888',
+  'captcha' => 'c2n7',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001864s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ C:\xampp\htdocs\smart_property\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002265s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.014077s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:38+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703&refresh=0.5036632250422066
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703&refresh=0.5036632250422066 [运行时间：0.255003s][吞吐率：3.92req/s] [内存消耗：2,127.74kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002879s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.21853652898798703',
+  'refresh' => '0.5036632250422066',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002287s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:49+08:00 ] 127.0.0.1 POST /admin/public/dologin.html
+[ info ] sp.com/admin/public/dologin.html [运行时间：0.302324s][吞吐率：3.31req/s] [内存消耗：3,435.93kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005625s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '68',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin888',
+  'captcha' => 'djus',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001802s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ C:\xampp\htdocs\smart_property\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011343s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013714s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:40:50+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703&refresh=0.5036632250422066&refresh=0.4973103921881772
+[ info ] sp.com/captcha/new.html?height=32&width=150&font_size=18&time=0.21853652898798703&refresh=0.5036632250422066&refresh=0.4973103921881772 [运行时间：0.254253s][吞吐率：3.93req/s] [内存消耗：2,127.73kb] [文件加载：49]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003956s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'time' => '0.21853652898798703',
+  'refresh' => '0.4973103921881772',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002183s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-01T10:40:57+08:00 ] 127.0.0.1 POST /admin/public/dologin.html
+[ info ] sp.com/admin/public/dologin.html [运行时间：0.391027s][吞吐率：2.56req/s] [内存消耗：3,549.71kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002748s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '68',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin888',
+  'captcha' => 'ik2q',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001704s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ C:\xampp\htdocs\smart_property\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011728s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013519s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.015710s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.001870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.026014s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.001594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.026156s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_type`=1,`sex`=0,`birthday`=0,`last_login_time`=1533091257,`score`=0,`coin`=0,`balance`=0,`create_time`=1532654640,`user_status`=1,`user_login`='admin',`user_pass`='###add0a1c796bdbc9948966931c6b3355f',`user_nickname`='admin',`user_email`='sherlock3@163.com',`user_url`='',`avatar`='',`signature`='',`last_login_ip`='127.0.0.1',`user_activation_key`='',`mobile`='',`more`=NULL  WHERE  `id` = 1 [ RunTime:0.004025s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:00+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sp.com/admin/index/index.html [运行时间：0.485891s][吞吐率：2.06req/s] [内存消耗：4,335.28kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003682s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001777s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.007259s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004735s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.020524s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.015889s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.013143s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:01+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] sp.com/admin/main/index.html [运行时间：0.450694s][吞吐率：2.22req/s] [内存消耗：3,839.91kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002770s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001803s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003535s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.051548s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011962s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013917s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009455s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009819s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:18+08:00 ] 127.0.0.1 GET /user/admin_user_action/index.html
+[ info ] sp.com/user/admin_user_action/index.html [运行时间：0.431171s][吞吐率：2.32req/s] [内存消耗：3,823.71kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003540s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin_user_action',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003079s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.006883s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\AdminUserActionController->index[ C:\xampp\htdocs\smart_property\app\user\controller\AdminUserActionController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/user\admin_user_action\index.html [ array (
+  0 => 'admin',
+  1 => 'actions',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011610s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.027292s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.010408s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_action` [ RunTime:0.014027s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_action` LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_action` LIMIT 0,20 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:20+08:00 ] 127.0.0.1 GET /admin/storage/index.html
+[ info ] sp.com/admin/storage/index.html [运行时间：0.365374s][吞吐率：2.74req/s] [内存消耗：3,708.60kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004963s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'storage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004459s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004067s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\StorageController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\StorageController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\storage\index.html [ array (
+  0 => 'admin',
+  1 => 'type',
+  2 => 'storages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012133s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013559s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009582s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:22+08:00 ] 127.0.0.1 GET /admin/setting/upload.html
+[ info ] sp.com/admin/setting/upload.html [运行时间：0.387734s][吞吐率：2.58req/s] [内存消耗：3,755.87kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004231s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003696s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003972s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SettingController->upload[ C:\xampp\htdocs\smart_property\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\upload.html [ array (
+  0 => 'admin',
+  1 => 'upload_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012260s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017819s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.010461s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'upload_setting' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:24+08:00 ] 127.0.0.1 GET /admin/route/index.html
+[ info ] sp.com/admin/route/index.html [运行时间：0.426585s][吞吐率：2.34req/s] [内存消耗：4,176.55kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003438s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'route',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003045s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.008951s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\RouteController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\RouteController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\route\index.html [ array (
+  0 => 'admin',
+  1 => 'routes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011829s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.022980s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009775s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_route` [ RunTime:0.013162s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_route` ORDER BY `list_order` ASC [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_route` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000640s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:36+08:00 ] 127.0.0.1 GET /admin/link/index.html
+[ info ] sp.com/admin/link/index.html [运行时间：0.392956s][吞吐率：2.54req/s] [内存消耗：4,134.38kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003795s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003078s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004461s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\LinkController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\LinkController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\link\index.html [ array (
+  0 => 'admin',
+  1 => 'links',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002215s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013506s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009698s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.009471s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:38+08:00 ] 127.0.0.1 GET /admin/slide/index.html
+[ info ] sp.com/admin/slide/index.html [运行时间：0.488445s][吞吐率：2.05req/s] [内存消耗：4,119.81kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003533s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'slide',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003081s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004815s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SlideController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\SlideController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\slide\index.html [ array (
+  0 => 'admin',
+  1 => 'slides',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012004s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.029890s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.019568s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.019132s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_slide` WHERE  `delete_time` = 0 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:40+08:00 ] 127.0.0.1 GET /admin/nav/index.html
+[ info ] sp.com/admin/nav/index.html [运行时间：0.445271s][吞吐率：2.25req/s] [内存消耗：4,124.60kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003927s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003129s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004113s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\NavController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\NavController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\nav\index.html [ array (
+  0 => 'admin',
+  1 => 'navs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011489s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.014023s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009344s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.014906s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_nav` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:42+08:00 ] 127.0.0.1 GET /admin/mailer/index.html
+[ info ] sp.com/admin/mailer/index.html [运行时间：0.402129s][吞吐率：2.49req/s] [内存消耗：3,726.55kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006214s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mailer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003199s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004313s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MailerController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\MailerController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\mailer\index.html [ array (
+  0 => 'admin',
+  1 => '',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012096s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.022508s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009742s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:43+08:00 ] 127.0.0.1 GET /admin/setting/site.html
+[ info ] sp.com/admin/setting/site.html [运行时间：0.407236s][吞吐率：2.46req/s] [内存消耗：3,783.85kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003637s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'site',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003023s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004028s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SettingController->site[ C:\xampp\htdocs\smart_property\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\site.html [ array (
+  0 => 'admin',
+  1 => 'site_info',
+  2 => 'admin_styles',
+  3 => 'templates',
+  4 => 'cdn_settings',
+  5 => 'admin_settings',
+  6 => 'cmf_settings',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011961s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013651s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009424s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cmf_settings' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000519s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:53+08:00 ] 127.0.0.1 GET /admin/mailer/index.html
+[ info ] sp.com/admin/mailer/index.html [运行时间：0.361616s][吞吐率：2.77req/s] [内存消耗：3,726.51kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004739s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mailer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004137s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004032s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MailerController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\MailerController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\mailer\index.html [ array (
+  0 => 'admin',
+  1 => '',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011970s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.022035s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.013047s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:41:55+08:00 ] 127.0.0.1 GET /admin/theme/index.html
+[ info ] sp.com/admin/theme/index.html [运行时间：0.423290s][吞吐率：2.36req/s] [内存消耗：4,294.01kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003692s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'theme',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003012s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.008870s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\ThemeController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\ThemeController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\theme\index.html [ array (
+  0 => 'admin',
+  1 => 'themes',
+  2 => 'default_theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011884s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.019637s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009860s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.009291s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:42:08+08:00 ] 127.0.0.1 GET /admin/nav/index.html
+[ info ] sp.com/admin/nav/index.html [运行时间：0.351219s][吞吐率：2.85req/s] [内存消耗：4,124.61kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003487s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003125s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004361s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\NavController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\NavController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\nav\index.html [ array (
+  0 => 'admin',
+  1 => 'navs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011197s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017542s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009869s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.006487s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_nav` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:42:11+08:00 ] 127.0.0.1 GET /admin/slide/index.html
+[ info ] sp.com/admin/slide/index.html [运行时间：0.362560s][吞吐率：2.76req/s] [内存消耗：4,119.78kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003835s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'slide',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003006s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004151s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SlideController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\SlideController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\slide\index.html [ array (
+  0 => 'admin',
+  1 => 'slides',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011470s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.021348s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009408s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.009818s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_slide` WHERE  `delete_time` = 0 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:42:14+08:00 ] 127.0.0.1 GET /admin/link/index.html
+[ info ] sp.com/admin/link/index.html [运行时间：0.346444s][吞吐率：2.89req/s] [内存消耗：4,134.45kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003383s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002809s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004312s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\LinkController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\LinkController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\link\index.html [ array (
+  0 => 'admin',
+  1 => 'links',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011298s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016954s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009367s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.009676s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:25+08:00 ] 127.0.0.1 GET /admin/plugin/index.html
+[ info ] sp.com/admin/plugin/index.html [运行时间：0.590086s][吞吐率：1.69req/s] [内存消耗：4,376.50kb] [文件加载：90]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003779s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003019s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004088s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\PluginController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\PluginController.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/plugins/demo/lang/zh-cn.php
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\plugin\index.html [ array (
+  0 => 'admin',
+  1 => 'plugins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012533s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013565s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009400s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.020212s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_plugin` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Demo' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Qiniu' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchAdminThemeDemo' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000397s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:31+08:00 ] 127.0.0.1 POST /admin/plugin/install/name/Wxapp.html
+[ info ] sp.com/admin/plugin/install/name/Wxapp.html [运行时间：0.698530s][吞吐率：1.43req/s] [内存消耗：4,496.19kb] [文件加载：94]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004745s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'install',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://sp.com/admin/plugin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'Wxapp',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004107s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003904s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\PluginController->install[ C:\xampp\htdocs\smart_property\app\admin\controller\PluginController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011316s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013703s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009326s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook` [ RunTime:0.012927s ]
+[ sql ] [ SQL ] SELECT `hook` FROM `cmf_hook` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_plugin` (`name` , `title` , `description` , `status` , `author` , `version` , `demo_url` , `author_url` , `has_admin` , `config`) VALUES ('Wxapp' , '微信小程序' , '微信小程序管理工具' , 1 , 'ThinkCMF' , '1.0' , 'http://demo.thinkcmf.com' , 'http://www.thinkcmf.com' , 1 , '[]') [ RunTime:0.002670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.013958s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'admin'  AND `controller` = 'Plugin'  AND `action` = 'default' LIMIT 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (1 , 1 , 1 , 10000 , 'plugin/Wxapp' , 'AdminIndex' , 'index' , '' , '小程序管理' , '' , '小程序管理') [ RunTime:0.003421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.013164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminIndex/index'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminIndex/index' , 'plugin_url' , '' , '小程序管理') [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminWxapp'  AND `action` = 'add' LIMIT 1 [ RunTime:0.001029s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (163 , 1 , 0 , 10000 , 'plugin/Wxapp' , 'AdminWxapp' , 'add' , '' , '添加小程序' , '' , '添加小程序') [ RunTime:0.001908s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminWxapp/add'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminWxapp/add' , 'plugin_url' , '' , '添加小程序') [ RunTime:0.001607s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminWxapp'  AND `action` = 'addPost' LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (163 , 2 , 0 , 10000 , 'plugin/Wxapp' , 'AdminWxapp' , 'addPost' , '' , '添加小程序提交保存' , '' , '添加小程序提交保存') [ RunTime:0.001562s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminWxapp/addPost'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminWxapp/addPost' , 'plugin_url' , '' , '添加小程序提交保存') [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminWxapp'  AND `action` = 'edit' LIMIT 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (163 , 1 , 0 , 10000 , 'plugin/Wxapp' , 'AdminWxapp' , 'edit' , '' , '编辑小程序' , '' , '编辑小程序') [ RunTime:0.002486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminWxapp/edit'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminWxapp/edit' , 'plugin_url' , '' , '编辑小程序') [ RunTime:0.001450s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminWxapp'  AND `action` = 'editPost' LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (163 , 2 , 0 , 10000 , 'plugin/Wxapp' , 'AdminWxapp' , 'editPost' , '' , '编辑小程序提交保存' , '' , '编辑小程序') [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminWxapp/editPost'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminWxapp/editPost' , 'plugin_url' , '' , '编辑小程序提交保存') [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminIndex'  AND `action` = 'index' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `app` = 'plugin/Wxapp'  AND `controller` = 'AdminWxapp'  AND `action` = 'delete' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_admin_menu` (`parent_id` , `type` , `status` , `list_order` , `app` , `controller` , `action` , `param` , `name` , `icon` , `remark`) VALUES (163 , 2 , 0 , 10000 , 'plugin/Wxapp' , 'AdminWxapp' , 'delete' , '' , '删除小程序' , '' , '删除小程序') [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `app` = 'plugin/Wxapp'  AND `name` = 'plugin/Wxapp/AdminWxapp/delete'  AND `type` = 'plugin_url' LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_auth_rule` (`app` , `name` , `type` , `param` , `title`) VALUES ('plugin/Wxapp' , 'plugin/Wxapp/AdminWxapp/delete' , 'plugin_url' , '' , '删除小程序') [ RunTime:0.000952s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:34+08:00 ] 127.0.0.1 GET /admin/plugin/index.html
+[ info ] sp.com/admin/plugin/index.html [运行时间：0.413836s][吞吐率：2.42req/s] [内存消耗：4,372.40kb] [文件加载：89]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.059165s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/plugin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002845s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004166s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\PluginController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\PluginController.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/plugins/demo/lang/zh-cn.php
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\plugin\index.html [ array (
+  0 => 'admin',
+  1 => 'plugins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012813s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.020350s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.015389s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.013726s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.010048s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_plugin` [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Demo' LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Qiniu' LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchAdminThemeDemo' LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:52+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sp.com/admin/index/index.html [运行时间：0.526828s][吞吐率：1.90req/s] [内存消耗：4,378.95kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002886s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002647s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.008144s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011561s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.021771s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.019266s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.012121s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 95  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 29  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 78  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 7  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 61  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 2  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 42  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 163  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 120  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 121  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 131  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 139  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 145  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 162  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:53+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] sp.com/admin/main/index.html [运行时间：0.399978s][吞吐率：2.50req/s] [内存消耗：3,839.88kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003266s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002702s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003910s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.022524s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002307s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.022062s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.013462s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.011275s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:48:53+08:00 ] 127.0.0.1 GET /admin/plugin/index.html
+[ info ] sp.com/admin/plugin/index.html [运行时间：0.901421s][吞吐率：1.11req/s] [内存消耗：4,366.41kb] [文件加载：89]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003518s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002489s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003388s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\PluginController->index[ C:\xampp\htdocs\smart_property\app\admin\controller\PluginController.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/plugins/demo/lang/zh-cn.php
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\plugin\index.html [ array (
+  0 => 'admin',
+  1 => 'plugins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002182s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.012295s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.020338s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009032s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_plugin` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Demo' LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Qiniu' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchAdminThemeDemo' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:49:07+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_index/index.html
+[ info ] sp.com/plugin/wxapp/admin_index/index.html [运行时间：0.378143s][吞吐率：2.64req/s] [内存消耗：3,749.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002832s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_index',
+  '_action' => 'index',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001702s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001773s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminIndexController->index[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminIndexController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_index.html [ array (
+  0 => 'site_info',
+  1 => 'admin_id',
+  2 => 'wxapps',
+  3 => 'default_wxapp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011232s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.014065s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009774s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-08-01T10:49:10+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_wxapp/add.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/add.html [运行时间：0.398624s][吞吐率：2.51req/s] [内存消耗：3,758.10kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002696s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'add',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002079s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003770s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->add[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_wxapp\add.html [ array (
+  0 => 'site_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011155s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.026735s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016059s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000869s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:11:36+08:00 ] 127.0.0.1 POST /plugin/wxapp/admin_wxapp/addpost.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/addpost.html [运行时间：0.334292s][吞吐率：2.99req/s] [内存消耗：3,558.33kb] [文件加载：73]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004364s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '120',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_wxapp/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => '测试小程序',
+  'app_id' => 'wx0c23612938f9daca',
+  'app_secret' => 'd1fd2eaa8623b1773facee5369e3e1ec',
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'addpost',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002966s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001715s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->addPost[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011658s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.014200s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.012155s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_option` (`option_name` , `option_value`) VALUES ('wxapp_settings' , '{\"wxapps\":{\"wx0c23612938f9daca\":{\"name\":\"\\u6d4b\\u8bd5\\u5c0f\\u7a0b\\u5e8f\",\"app_id\":\"wx0c23612938f9daca\",\"app_secret\":\"d1fd2eaa8623b1773facee5369e3e1ec\",\"_plugin\":\"wxapp\",\"_controller\":\"admin_wxapp\",\"_action\":\"addpost\"}}}') [ RunTime:0.002564s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:11:39+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html [运行时间：0.384863s][吞吐率：2.60req/s] [内存消耗：3,765.58kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003374s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_wxapp/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'edit',
+  'id' => 'wx0c23612938f9daca',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001837s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001731s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->edit[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_wxapp\edit.html [ array (
+  0 => 'site_info',
+  1 => 'wxapp',
+  2 => 'default_wxapp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002618s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.023645s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.019527s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000475s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:11:41+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_index/index.html
+[ info ] sp.com/plugin/wxapp/admin_index/index.html [运行时间：0.360300s][吞吐率：2.78req/s] [内存消耗：3,748.52kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002854s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_index',
+  '_action' => 'index',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001702s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003773s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminIndexController->index[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminIndexController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_index.html [ array (
+  0 => 'site_info',
+  1 => 'admin_id',
+  2 => 'wxapps',
+  3 => 'default_wxapp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011443s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.022784s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016437s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:12:42+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html [运行时间：0.340912s][吞吐率：2.93req/s] [内存消耗：3,762.07kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003929s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'edit',
+  'id' => 'wx0c23612938f9daca',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002914s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001869s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->edit[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_wxapp\edit.html [ array (
+  0 => 'site_info',
+  1 => 'wxapp',
+  2 => 'default_wxapp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012714s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017529s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009633s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:12:45+08:00 ] 127.0.0.1 POST /plugin/wxapp/admin_wxapp/editpost.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/editpost.html [运行时间：0.343131s][吞吐率：2.91req/s] [内存消耗：3,487.80kb] [文件加载：72]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002937s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '133',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => '测试小程序',
+  'app_id' => 'wx0c23612938f9daca',
+  'app_secret' => 'd1fd2eaa8623b1773facee5369e3e1ec',
+  'is_default' => '1',
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'editpost',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002268s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001888s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->editPost[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011238s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.013436s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.018652s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] UPDATE `cmf_option`  SET `option_value`='{\"wxapps\":{\"wx0c23612938f9daca\":{\"name\":\"\\u6d4b\\u8bd5\\u5c0f\\u7a0b\\u5e8f\",\"app_id\":\"wx0c23612938f9daca\",\"app_secret\":\"d1fd2eaa8623b1773facee5369e3e1ec\",\"_plugin\":\"wxapp\",\"_controller\":\"admin_wxapp\",\"_action\":\"editpost\"}},\"default\":{\"name\":\"\\u6d4b\\u8bd5\\u5c0f\\u7a0b\\u5e8f\",\"app_id\":\"wx0c23612938f9daca\",\"app_secret\":\"d1fd2eaa8623b1773facee5369e3e1ec\",\"is_default\":\"1\",\"_plugin\":\"wxapp\",\"_controller\":\"admin_wxapp\",\"_action\":\"editpost\"}}'  WHERE  `option_name` = 'wxapp_settings' [ RunTime:0.003591s ]
+---------------------------------------------------------------
+[ 2018-08-01T11:12:48+08:00 ] 127.0.0.1 GET /plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html
+[ info ] sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html [运行时间：0.363949s][吞吐率：2.75req/s] [内存消耗：3,770.77kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007174s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\PluginController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/plugin/wxapp/admin_wxapp/edit/id/wx0c23612938f9daca.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=admin; PHPSESSID=3e264bqrt02hjfqkvtmahtiiu5; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '_plugin' => 'wxapp',
+  '_controller' => 'admin_wxapp',
+  '_action' => 'edit',
+  'id' => 'wx0c23612938f9daca',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002653s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001728s ]
+[ info ] [ RUN ] cmf\controller\PluginController->index[ C:\xampp\htdocs\smart_property\simplewind\cmf\controller\PluginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] plugins\wxapp\controller\AdminWxappController->edit[ C:\xampp\htdocs\smart_property\public\plugins\wxapp\controller\AdminWxappController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/plugins/wxapp/view/admin_wxapp\edit.html [ array (
+  0 => 'site_info',
+  1 => 'wxapp',
+  2 => 'default_wxapp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003881s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.034844s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.009583s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'wxapp_settings' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000635s ]

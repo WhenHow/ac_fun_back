@@ -1,0 +1,181 @@
+---------------------------------------------------------------
+[ 2018-07-26T10:57:38+08:00 ] 127.0.0.1 GET /
+[ info ] sp.com/ [运行时间：0.038404s][吞吐率：26.04req/s] [内存消耗：1,892.82kb] [文件加载：43]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.000639s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002548s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-26T10:57:38+08:00 ] 127.0.0.1 GET /?s=install
+[ info ] sp.com/?s=install [运行时间：0.060846s][吞吐率：16.43req/s] [内存消耗：2,593.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.000439s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001603s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/install\lang\zh-cn.php
+[ info ] [ RUN ] app\install\controller\IndexController->index[ C:\xampp\htdocs\smart_property\app\install\controller\IndexController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/../app/install\view\\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-26T10:57:38+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] sp.com/favicon.ico [运行时间：0.046940s][吞吐率：21.30req/s] [内存消耗：1,988.13kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.000660s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sp.com/?s=install',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002302s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-26T10:58:28+08:00 ] 127.0.0.1 GET /?s=install/index/step2
+[ info ] sp.com/?s=install/index/step2 [运行时间：0.086345s][吞吐率：11.58req/s] [内存消耗：2,691.78kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.000387s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sp.com/?s=install',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001830s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/install\lang\zh-cn.php
+[ info ] [ RUN ] app\install\controller\IndexController->step2[ C:\xampp\htdocs\smart_property\app\install\controller\IndexController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\smart_property\public/../app/install\view\\step2.html [ array (
+  0 => 'phpversion',
+  1 => 'os',
+  2 => 'pdo',
+  3 => 'pdo_mysql',
+  4 => 'curl',
+  5 => 'gd',
+  6 => 'mbstring',
+  7 => 'fileinfo',
+  8 => 'upload_size',
+  9 => 'session',
+  10 => 'always_populate_raw_post_data',
+  11 => 'show_always_populate_raw_post_data_tip',
+  12 => 'folders',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-26T10:58:28+08:00 ] 127.0.0.1 POST /install/index/testRewrite
+[ info ] sp.com/install/index/testRewrite [运行时间：0.054757s][吞吐率：18.26req/s] [内存消耗：2,326.17kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.000657s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'testRewrite',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://sp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://sp.com/?s=install/index/step2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004119s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public/../app/install\lang\zh-cn.php
+[ info ] [ RUN ] app\install\controller\IndexController->testRewrite[ C:\xampp\htdocs\smart_property\app\install\controller\IndexController.php ]
+[ info ] [ LOG ] INIT File

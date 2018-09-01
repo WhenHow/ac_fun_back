@@ -1,0 +1,45 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>机构列表</a></li>
+        <li><a href="{:url('agency/agency_add')}">添加机构</a></li>
+    </ul>
+    <form method="post" class="js-ajax-form">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>机构名</th>
+                <th>联系方式</th>
+                <th>小程序appId</th>
+                <th>小程序appSecret</th>
+                <th>状态</th>
+                <th>添加时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="list" item="vo">
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.agency_name}</td>
+                    <td>{$vo.contact_method}</td>
+                    <td>{$vo.wxapp_appid}</td>
+                    <td>{$vo.wxapp_app_secret}</td>
+                    <td>
+                        <eq name="vo.is_using" value="1">正常<else/>禁用</eq>
+                    </td>
+                    <td>{$vo.create_time}</td>
+                    <td><a href="{:url('agency/agency_edit',['id'=>$vo['id']])}">编辑</a>|<a>删除</a></td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+---------------------------------------------------------------
+[ 2018-08-08T10:47:27+08:00 ] 127.0.0.1 GET /api/portal/articles?page=1&order=-published_time
+[ info ] sp.com/api/portal/articles?page=1&order=-published_time [运行时间：0.762477s][吞吐率：1.31req/s] [内存消耗：3,710.21kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.078400s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'Articles',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'xx-device-type' => 'wxapp',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1808030 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'xx-wxapp-appid' => 'wx0c23612938f9daca',
+  'xx-api-version' => '1.1.0',
+  'xx-token' => 'a0479f717a3fb5292323e4dcee71e3e2e7b51ae064be8a3a6598e69f2cdb2562',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx0c23612938f9daca/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'order' => '-published_time',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.016707s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] api\portal\controller\ArticlesController->index[ C:\xampp\htdocs\smart_property\api\portal\controller\ArticlesController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008400s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.045428s ]
+[ sql ] [ SQL ] SELECT `b`.* FROM `cmf_user_token` `a` INNER JOIN `cmf_user` `b` ON `a`.`user_id`=`b`.`id` WHERE  `token` = 'a0479f717a3fb5292323e4dcee71e3e2e7b51ae064be8a3a6598e69f2cdb2562'  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.009052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.015788s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  ( `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 )  AND ( `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 )  AND ( `published_time` BETWEEN 1 AND 1533696447 AND `published_time` BETWEEN 1 AND 1533696447 AND `published_time` BETWEEN 1 AND 1533696447 AND `published_time` BETWEEN 1 AND 1533696447 )  AND `post_type` = 1 ORDER BY `published_time` DESC LIMIT 0,20 [ RunTime:0.002260s ]
+---------------------------------------------------------------
+[ 2018-08-08T10:47:38+08:00 ] 127.0.0.1 GET /api/portal/articles?page=1&order=-published_time
+[ info ] sp.com/api/portal/articles?page=1&order=-published_time [运行时间：0.080574s][吞吐率：12.41req/s] [内存消耗：3,702.75kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003237s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'Articles',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'xx-device-type' => 'wxapp',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1808030 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'xx-wxapp-appid' => 'wx0c23612938f9daca',
+  'xx-api-version' => '1.1.0',
+  'xx-token' => '',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx0c23612938f9daca/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'order' => '-published_time',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001709s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] api\portal\controller\ArticlesController->index[ C:\xampp\htdocs\smart_property\api\portal\controller\ArticlesController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002525s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.014846s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  ( `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 )  AND ( `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 )  AND ( `published_time` BETWEEN 1 AND 1533696458 AND `published_time` BETWEEN 1 AND 1533696458 AND `published_time` BETWEEN 1 AND 1533696458 AND `published_time` BETWEEN 1 AND 1533696458 )  AND `post_type` = 1 ORDER BY `published_time` DESC LIMIT 0,20 [ RunTime:0.000804s ]
+---------------------------------------------------------------
+[ 2018-08-08T10:47:39+08:00 ] 127.0.0.1 POST /api/wxapp/public/login
+[ info ] sp.com/api/wxapp/public/login [运行时间：0.321443s][吞吐率：3.11req/s] [内存消耗：3,154.82kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003386s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1036',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:53018',
+  'xx-device-type' => 'wxapp',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1808030 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'xx-wxapp-appid' => 'wx0c23612938f9daca',
+  'xx-api-version' => '1.1.0',
+  'xx-token' => '',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx0c23612938f9daca/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '001ebCAt1srild0tOaAt1IJVAt1ebCA7',
+  'encrypted_data' => 'CDjzOMHdDj7K/yE6a6lCPhtV9G5CrlWuLfgv2KSUJ+C6QhTBDkIAFt3FhGKeqkCA7GxuKru4Eq7eUzC4JP3xZp4/x8lms+lmBPgCNpUGS2vCrH+GOLVEwb16ALXjyJIK/yTCMsVpmU2fBZyetuQTfIje1fF6mSWBPMgdC3mjpUKyCVOBixsZDYVP0flFC77WnXx5uf0bqiY3QwG+Ao1Mq4TorqrcueAV1JV5ihIKEAG+8o30VMLJsQvcahDi6lAstky6DqdzBTL1hIdNim89r/EgXn1nO9AdDLFt2VWwNeCnKj0weB+DpoH09JTdgFxQuzcEsDD49tnDwqj2zhT/sVToqOfrTaEDNOl4sGWL/+9PQrLT19KkFCV56gfdCr4t2wU6Nzms01107eE/OQ+UY9e2ShDHbjZZo+Vy4RB59mNJZQe9jZFB4j05Sye29OpvPqtV0LeMAA2qdPEGyL7OiXG8phkn8JNGNaCMfybzRfw=',
+  'iv' => 'qva3BxYbDrsDlQCpOGegdA==',
+  'raw_data' => '{&quot;nickName&quot;:&quot;顶文洁&quot;,&quot;gender&quot;:1,&quot;language&quot;:&quot;zh_CN&quot;,&quot;city&quot;:&quot;Nanjing&quot;,&quot;province&quot;:&quot;Jiangsu&quot;,&quot;country&quot;:&quot;China&quot;,&quot;avatarUrl&quot;:&quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ereKjgSTqAjfGBE8Y7ibgGGoSbpjibkQvPV9N7aG7NFvlTrR5qnhyVYfLRIUVLSzL98TFuJEccld0vQ/132&quot;}',
+  'signature' => 'af2f961543665bdd90209e68af017f03d900426e',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001749s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ C:\xampp\htdocs\smart_property\api\wxapp\controller\PublicController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002558s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_third_party_user` [ RunTime:0.023248s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_third_party_user` WHERE  `openid` = 'oPBsB5QjxDB6_I9ENM0JNqxkRH6I'  AND `app_id` = 'wx0c23612938f9daca' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.009916s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 5  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] UPDATE `cmf_third_party_user`  SET `last_login_ip`='127.0.0.1',`last_login_time`=1533696459,`login_times`=login_times+1,`more`='{\"openId\":\"oPBsB5QjxDB6_I9ENM0JNqxkRH6I\",\"nickName\":\"\\u9876\\u6587\\u6d01\",\"gender\":1,\"language\":\"zh_CN\",\"city\":\"Nanjing\",\"province\":\"Jiangsu\",\"country\":\"China\",\"avatarUrl\":\"https:\\/\\/wx.qlogo.cn\\/mmopen\\/vi_32\\/DYAIOgq83ereKjgSTqAjfGBE8Y7ibgGGoSbpjibkQvPV9N7aG7NFvlTrR5qnhyVYfLRIUVLSzL98TFuJEccld0vQ\\/132\",\"sessionKey\":\"udSdu76tUrchJI4gyRW5xA==\"}'  WHERE  `openid` = 'oPBsB5QjxDB6_I9ENM0JNqxkRH6I'  AND `app_id` = 'wx0c23612938f9daca' [ RunTime:0.003551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.009986s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000470s ]
+---------------------------------------------------------------
+[ 2018-08-08T10:47:40+08:00 ] 127.0.0.1 GET /api/portal/articles?order=-published_time
+[ info ] sp.com/api/portal/articles?order=-published_time [运行时间：0.107470s][吞吐率：9.30req/s] [内存消耗：3,710.17kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002881s ]
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'Articles',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sp.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'xx-device-type' => 'wxapp',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1808030 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'xx-wxapp-appid' => 'wx0c23612938f9daca',
+  'xx-api-version' => '1.1.0',
+  'xx-token' => 'a0479f717a3fb5292323e4dcee71e3e2e7b51ae064be8a3a6598e69f2cdb2562',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx0c23612938f9daca/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'order' => '-published_time',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\smart_property\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001580s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] api\portal\controller\ArticlesController->index[ C:\xampp\htdocs\smart_property\api\portal\controller\ArticlesController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012736s ] mysql:host=127.0.0.1;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.016168s ]
+[ sql ] [ SQL ] SELECT `b`.* FROM `cmf_user_token` `a` INNER JOIN `cmf_user` `b` ON `a`.`user_id`=`b`.`id` WHERE  `token` = 'a0479f717a3fb5292323e4dcee71e3e2e7b51ae064be8a3a6598e69f2cdb2562'  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.010109s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  ( `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 AND `delete_time` = 0 )  AND ( `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 AND `post_status` = 1 )  AND ( `published_time` BETWEEN 1 AND 1533696460 AND `published_time` BETWEEN 1 AND 1533696460 AND `published_time` BETWEEN 1 AND 1533696460 AND `published_time` BETWEEN 1 AND 1533696460 )  AND `post_type` = 1 ORDER BY `published_time` DESC LIMIT 10 [ RunTime:0.000733s ]

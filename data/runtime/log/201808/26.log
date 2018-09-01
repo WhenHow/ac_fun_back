@@ -1,0 +1,709 @@
+---------------------------------------------------------------
+[ 2018-08-26T14:00:05+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] ac.com/admin/index/index.html [运行时间：3.008845s][吞吐率：0.33req/s] [内存消耗：3,991.73kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.153801s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=7f5u84uk9vbqpafllgnrucqh0b; thinkphp_show_page_trace=0|0; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.070509s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.123197s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\workspace\www\ac_fun\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.154840s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.077982s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.049983s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.027183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.026803s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.054600s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.035831s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.026060s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.024831s ]
+---------------------------------------------------------------
+[ 2018-08-26T14:00:06+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] ac.com/admin/main/index.html [运行时间：0.791173s][吞吐率：1.26req/s] [内存消耗：3,406.31kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003780s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ac.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=7f5u84uk9vbqpafllgnrucqh0b; thinkphp_show_page_trace=0|0; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002015s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002457s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\workspace\www\ac_fun\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\workspace\www\ac_fun\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.262387s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047230s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.030884s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.035677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.029153s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.041484s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.068994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.046301s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.029172s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.062906s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.059703s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.041329s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.031406s ]
+---------------------------------------------------------------
+[ 2018-08-26T14:00:07+08:00 ] 127.0.0.1 GET /admin/agency/index.html
+[ info ] ac.com/admin/agency/index.html [运行时间：0.882070s][吞吐率：1.13req/s] [内存消耗：3,371.71kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003484s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'agency',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ac.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=7f5u84uk9vbqpafllgnrucqh0b; thinkphp_show_page_trace=0|0; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004830s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002399s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AgencyController->index[ D:\workspace\www\ac_fun\app\admin\controller\AgencyController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\agency\index.html [ array (
+  0 => 'admin',
+  1 => 'page',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085082s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.027132s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.051481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.030095s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_agency` [ RunTime:0.028626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_agency` WHERE  `is_flag` = 1 LIMIT 1 [ RunTime:0.058532s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_agency` WHERE  `is_flag` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.031355s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.031757s ]
+---------------------------------------------------------------
+[ 2018-08-26T14:00:07+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] ac.com/favicon.ico [运行时间：0.160970s][吞吐率：6.21req/s] [内存消耗：1,904.20kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003367s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://ac.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7f5u84uk9vbqpafllgnrucqh0b; thinkphp_show_page_trace=0|0; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001595s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-26T22:52:33+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.733827s][吞吐率：1.36req/s] [内存消耗：3,028.68kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004223s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002922s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.055738s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080711s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.025013s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.022673s ]
+[ error ] [0]不支持: redis[D:\workspace\www\ac_fun\simplewind\thinkphp\library\think\cache\driver\Redis.php:44]
+---------------------------------------------------------------
+[ 2018-08-26T22:52:33+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] ac.com/favicon.ico [运行时间：0.044881s][吞吐率：22.28req/s] [内存消耗：1,904.05kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004397s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://ac.com/index.php?s=User/Test/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001727s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-26T22:55:38+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.293253s][吞吐率：3.41req/s] [内存消耗：3,029.13kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005442s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003755s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003589s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101311s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.040565s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.033930s ]
+[ error ] [0]不支持: redis[D:\workspace\www\ac_fun\simplewind\thinkphp\library\think\cache\driver\Redis.php:44]
+---------------------------------------------------------------
+[ 2018-08-26T22:58:32+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.290966s][吞吐率：3.44req/s] [内存消耗：3,029.13kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004576s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003288s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003764s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101874s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.034285s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.026953s ]
+[ error ] [0]不支持: redis[D:\workspace\www\ac_fun\simplewind\thinkphp\library\think\cache\driver\Redis.php:44]
+---------------------------------------------------------------
+[ 2018-08-26T22:58:38+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.220761s][吞吐率：4.53req/s] [内存消耗：3,029.13kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004569s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001959s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003856s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039020s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.048368s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.027109s ]
+[ error ] [0]不支持: redis[D:\workspace\www\ac_fun\simplewind\thinkphp\library\think\cache\driver\Redis.php:44]
+---------------------------------------------------------------
+[ 2018-08-26T23:00:17+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/info
+[ info ] ac.com/index.php?s=User/Test/info [运行时间：0.358553s][吞吐率：2.79req/s] [内存消耗：3,077.84kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004579s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001753s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003132s ]
+[ info ] [ RUN ] app\user\controller\TestController->info[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096611s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.023620s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.023245s ]
+---------------------------------------------------------------
+[ 2018-08-26T23:01:33+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.594611s][吞吐率：1.68req/s] [内存消耗：3,029.20kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003371s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004337s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003474s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.330322s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.021723s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.142433s ]
+[ error ] [0]不支持: redis[D:\workspace\www\ac_fun\simplewind\thinkphp\library\think\cache\driver\Redis.php:44]
+---------------------------------------------------------------
+[ 2018-08-26T23:01:38+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/info
+[ info ] ac.com/index.php?s=User/Test/info [运行时间：0.240985s][吞吐率：4.15req/s] [内存消耗：3,077.84kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005743s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003229s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003507s ]
+[ info ] [ RUN ] app\user\controller\TestController->info[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048051s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.043373s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.027528s ]
+---------------------------------------------------------------
+[ 2018-08-26T23:02:53+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/info
+[ info ] ac.com/index.php?s=User/Test/info [运行时间：0.240417s][吞吐率：4.16req/s] [内存消耗：3,077.81kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003397s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001788s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003527s ]
+[ info ] [ RUN ] app\user\controller\TestController->info[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072930s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.039506s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.038748s ]
+---------------------------------------------------------------
+[ 2018-08-26T23:03:11+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：1.098463s][吞吐率：0.91req/s] [内存消耗：3,000.97kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004778s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002007s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003780s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.467444s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.031842s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.051136s ]
+---------------------------------------------------------------
+[ 2018-08-26T23:03:17+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.577736s][吞吐率：1.73req/s] [内存消耗：3,001.25kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003190s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002599s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003236s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035007s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.026923s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.045588s ]
+---------------------------------------------------------------
+[ 2018-08-26T23:03:20+08:00 ] 127.0.0.1 GET /index.php?s=User/Test/index
+[ info ] ac.com/index.php?s=User/Test/index [运行时间：0.697207s][吞吐率：1.43req/s] [内存消耗：3,001.25kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004061s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'User',
+    1 => 'Test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ac.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002138s ]
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\workspace\www\ac_fun\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003171s ]
+[ info ] [ RUN ] app\user\controller\TestController->index[ D:\workspace\www\ac_fun\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039012s ] mysql:host=rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com;port=3306;dbname=sp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.023596s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.038903s ]

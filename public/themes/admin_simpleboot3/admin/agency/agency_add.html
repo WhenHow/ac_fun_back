@@ -1,0 +1,62 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('agency/index')}">机构列表</a></li>
+        <li class="active"><a >添加机构</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" action="{:url('agency/addPost')}" method="post">
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>机构名称</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="agency_name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-remark" class="col-sm-2 control-label">机构描述</label>
+            <div class="col-md-6 col-sm-10">
+                <textarea type="text" class="form-control" id="input-remark" name="intro"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">联系方式</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control"  name="contact_method">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">小程序appId</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control"  name="wxapp_appid">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">小程序appSecret</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control"  name="wxapp_app_secret">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">状态</label>
+            <div class="col-md-6 col-sm-10">
+                <label class="radio-inline">
+                    <input type="radio" name="is_using" value="1" checked="checked" > 开启
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="is_using" value="0"> 禁用
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('ADD')}</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>
