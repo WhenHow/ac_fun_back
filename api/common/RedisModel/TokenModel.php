@@ -9,7 +9,7 @@ namespace api\common\RedisModel;
 
 class TokenModel extends BaseRedisModel
 {
-    const USER_TOKEN_PREFIX = 'USER_TOKEN';
+    const USER_TOKEN_PREFIX = 'XWAPP_TOKEN:';
 
     public function __construct()
     {
@@ -23,10 +23,11 @@ class TokenModel extends BaseRedisModel
         return $this->get($redis_index,null);
     }
 
-    public function setToken($token,$user_info)
+    public function setToken($token,$user_info,$expire_seconds = 0)
     {
         $redis_index = $this->getTokenRedisIndex($token);
-        return $this->set($redis_index,$user_info,config('REDIS_EXPIRE_TIME.USER_TOKEN'));
+        $expire_seconds = $expire_seconds <= 0 ? config('REDIS_EXPIRE_TIME.USER_TOKEN') : $expire_seconds;
+        return $this->set($redis_index,$user_info,$expire_seconds);
     }
 
 

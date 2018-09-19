@@ -80,7 +80,7 @@ class UserController extends BaseController
         }
         //执行注册
         $user_data = $this->buildRegData($agency_id,$app_id,$wx_user_info);
-        $ret = $user_logic->addUser($user_data['user_base'],$user_data['user_info'],UserRoleMap::FRONT_USER,$user_data['third_user']);
+        $ret = $user_logic->addUser($user_data['user_base'],$user_data['user_info'],UserRoleMap::STUDENT,$user_data['third_user']);
         if($ret['code'] == ErrorCodeMap::SUCCESS){
             $this->success();
         }
@@ -101,7 +101,7 @@ class UserController extends BaseController
         $user_base['user_type'] = $is_front ? UserDataTypeMap::USER_TYPE_NORMAL : UserDataTypeMap::USER_TYPE_ADMIN;
         $user_base['avatar'] = $wx_user_info['avatarUrl'];
 
-        $user_info['unit_id'] = $data['unit_id'];
+        //$user_info['unit_id'] = $data['unit_id'];
         $user_info['real_name'] = $data['real_name'];
         $user_info['contact_tel'] = $data['tel'];
         $user_info['agency_id'] = $agency_id;
@@ -129,7 +129,7 @@ class UserController extends BaseController
             'iv'             => 'require',
             'rawData'       => 'require',
             'signature'      => 'require',
-            'unit_id' => 'require',
+            //'unit_id' => 'require',
             'real_name'=>'require',
             'tel'=>'require'
         ]);
@@ -140,7 +140,7 @@ class UserController extends BaseController
             'iv.require'             => '缺少参数iv!',
             'rawData.require'       => '缺少参数raw_data!',
             'signature.require'      => '缺少参数signature!',
-            'unit_id.require' => '缺少单位',
+            //'unit_id.require' => '缺少单位',
             'real_name.require' => '缺少用户名',
             'tel.require' => '缺少电话',
         ]);

@@ -14,6 +14,7 @@ use api\common\model\ThirdPartyUserModel;
 use api\common\model\User;
 use api\common\model\UserInfoModel;
 use api\common\model\UserModel;
+use api\common\RedisModel\UserInfoRedisModel;
 use think\Db;
 class UserLogic extends BaseLogic
 {
@@ -53,11 +54,19 @@ class UserLogic extends BaseLogic
         }
         $data['token'] = $token;
         //获得用户相关信息
+        $user_detail = $this->getUserDetails($user_id,$device_type);
+        $data = array_merge($data,$user_detail);
+        //更新用户缓存信息
+        $user_info_redis = new UserInfoRedisModel();
+        $user_info_redis->setInfo($user_id,$user_detail);
+        return $data;
+    }
+
+    public function getUserDetails($user_id,$device_type){
         $data['user_roles'] = $this->getUserRoles($user_id);
         $data['third_user_info'] = $this->getThirdUserInfo($user_id,['openid','union_id','third_party'],$device_type);
         $data['user_base'] = $this->getUserInfoById($user_id,['avatar','mobile','sex','user_nickname','user_status','user_type']);
         $data['user_extra'] = $this->getUserExtraInfo($user_id,['address','agency_id','avatar_img_id','contact_tel','job_title','real_name','section_name','unit_id']);
-
         return $data;
     }
 

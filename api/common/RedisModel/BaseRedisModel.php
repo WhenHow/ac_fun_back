@@ -6,6 +6,8 @@
  * Time: 7:58
  */
 namespace api\common\RedisModel;
+use think\Config;
+
 class BaseRedisModel
 {
     protected $redis;
@@ -17,6 +19,10 @@ class BaseRedisModel
 
     public function __call($name, $arguments)
     {
+        if(!Config::get('OPEN_CACHE')){
+            return null;
+        }
+
         if(in_array($name,['get','set','has','inc','dec','rm','clear'])){
             return call_user_func_array(array($this->redis,$name),$arguments);
         }

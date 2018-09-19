@@ -1440,7 +1440,9 @@ function cmf_generate_user_token($userId, $deviceType)
         ->where('device_type', $deviceType);
     $findUserToken  = $userTokenQuery->find();
     $currentTime    = time();
-    $expireTime     = $currentTime + 24 * 3600 * 180;
+
+    $expireSeconds = 24 * 3600 * 180;
+    $expireTime     = $currentTime + $expireSeconds;
     $token          = md5(uniqid()) . md5(uniqid());
     if (empty($findUserToken)) {
         Db::name("user_token")->insert([
@@ -1450,6 +1452,7 @@ function cmf_generate_user_token($userId, $deviceType)
             'create_time' => $currentTime,
             'device_type' => $deviceType
         ]);
+
     } else {
         if ($findUserToken['expire_time'] > time() && !empty($findUserToken['token'])) {
             $token = $findUserToken['token'];
@@ -1465,6 +1468,9 @@ function cmf_generate_user_token($userId, $deviceType)
         }
 
     }
+
+    $token_redis = new \api\common\RedisModel\TokenModel();
+    $token_redis->setToken($token,$userId,$expireSeconds);
 
     return $token;
 }

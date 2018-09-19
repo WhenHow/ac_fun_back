@@ -11,10 +11,19 @@ namespace app\user\controller;
 
 use cmf\controller\HomeBaseController;
 use think\cache\driver\Redis;
+use think\Db;
+
 class TestController extends HomeBaseController
 {
     public function index(){
+        $begin = time();
 
+        $redis = new Redis();
+        $redis->set('s',"s");
+
+        var_dump(time()-$begin);
+        $ret = Db::name('user')->find();
+        var_dump($ret);
     }
 
     public function info(){

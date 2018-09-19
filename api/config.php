@@ -258,7 +258,9 @@ return [
     'cmf_admin_theme_path'    => 'themes/admin/',
     'cmf_admin_default_theme' => 'simpleboot3',
 
+    'OPEN_CACHE' => true,
+
     'REDIS_EXPIRE_TIME' => [
-        "USER_TOKEN"=>200
+        "USER_TOKEN"=>200,
     ]
 ];

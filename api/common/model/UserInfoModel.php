@@ -41,7 +41,7 @@ class UserInfoModel extends CommonModel
             'agency_id' => 'number',
             'avatar_img_id' => 'number',
             'appid' => 'number',
-            'real_name' => 'chs'
+            'real_name' => 'chs|min:2|max:10'
         );
 
         $is_validate = $this->validate($rule);

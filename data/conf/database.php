@@ -9,7 +9,7 @@ return [
     // 服务器地址
     'hostname' => 'rm-uf65a7590p355653pxo.mysql.rds.aliyuncs.com',
     // 数据库名
-    'database' => 'sp',
+    'database' => 'ac',
     // 用户名
     'username' => 'umooctest',
     // 密码
