@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bee7315a-f158-4294-83fd-f2ff0c36a227" name="Default Changelist" comment="initial">
-      <change afterPath="$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common/logic/WordLogic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common/map/CommonMap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/wxapp/controller/WordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words/1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words/2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words/3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ac_fun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ac_fun.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/map/ErrorCodeMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/map/ErrorCodeMap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,14 +81,14 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="log" value="4" />
-          <entry key="php" value="11722" />
+          <entry key="php" value="11723" />
           <entry key="think" value="1" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="11723" />
+          <entry key="PHP" value="11724" />
           <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
@@ -116,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/common/logic/WordLogic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state relative-caret-position="748">
+              <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
               <folding>
                 <element signature="e#116#145#0#PHP" expanded="true" />
               </folding>
@@ -146,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="330">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -173,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="183">
               <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
             </state>
           </provider>
@@ -191,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+            <state relative-caret-position="380">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -316,6 +304,21 @@
     <option name="width" value="1400" />
     <option name="height" value="780" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Quality toolsPHP</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -330,51 +333,6 @@
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="think" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="think" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
-              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="think" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -388,7 +346,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="vcs.CVS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -446,7 +404,7 @@
       <workItem from="1537972317552" duration="8276000" />
       <workItem from="1538491545527" duration="4486000" />
       <workItem from="1538743710377" duration="7290000" />
-      <workItem from="1540095935884" duration="1337000" />
+      <workItem from="1540095935884" duration="4892000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1535786286941</created>
@@ -469,11 +427,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537372260259</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial">
+      <created>1540097615641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540097615641</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial">
+      <created>1540107412880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540107412880</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111686000" />
+    <option name="totallyTimeSpent" value="115241000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -487,14 +459,14 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27659574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27659574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
@@ -503,7 +475,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.32765958" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32765958" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32765958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -837,34 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/logic/WordLogic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-          <folding>
-            <element signature="e#116#145#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4620">
           <caret line="218" column="30" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -875,24 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/common/RedisModel/TokenModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -903,10 +837,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/logic/WordLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+          <folding>
+            <element signature="e#116#145#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="330">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
