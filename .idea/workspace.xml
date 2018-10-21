@@ -81,14 +81,14 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="log" value="4" />
-          <entry key="php" value="11724" />
+          <entry key="php" value="11739" />
           <entry key="think" value="1" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="11725" />
+          <entry key="PHP" value="11740" />
           <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
@@ -134,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="286">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -404,7 +404,7 @@
       <workItem from="1537972317552" duration="8276000" />
       <workItem from="1538491545527" duration="4486000" />
       <workItem from="1538743710377" duration="7290000" />
-      <workItem from="1540095935884" duration="6195000" />
+      <workItem from="1540095935884" duration="6682000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1535786286941</created>
@@ -455,11 +455,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540108540510</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="initial">
+      <created>1540112294175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540112294175</updated>
+    </task>
+    <task id="LOCAL-00009" summary="initial">
+      <created>1540112687071</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540112687071</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116544000" />
+    <option name="totallyTimeSpent" value="117031000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -474,7 +488,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -486,7 +500,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.32765958" />
@@ -902,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="286">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
