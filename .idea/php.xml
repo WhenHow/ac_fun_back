@@ -18,6 +18,7 @@
       <path value="$PROJECT_DIR$/simplewind/vendor/electrolinux/phpquery" />
       <path value="$PROJECT_DIR$/simplewind/vendor/topthink/think-helper" />
       <path value="$PROJECT_DIR$/simplewind/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/simplewind/vendor/Excel/PHPExcel" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />

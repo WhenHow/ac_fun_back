@@ -27,5 +27,6 @@ function diff_item_fetcher($original_data,$new_data){
  */
 function setReturnData($code,$msg = '',$data = ''){
     $code = $code == true ? 1 : $code;
-    return ['code'=>$code,'msg'=>$msg,'data'=>$data];
+    $status = $code == 1 ? true : false;
+    return ['code'=>$code,'msg'=>$msg,'data'=>$data,'status'=>$status];
 }

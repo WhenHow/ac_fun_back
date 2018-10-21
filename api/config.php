@@ -262,5 +262,7 @@ return [
 
     'REDIS_EXPIRE_TIME' => [
         "USER_TOKEN"=>200,
-    ]
+    ],
+
+    'DEFAULT_BOOK_ID' => 1,
 ];

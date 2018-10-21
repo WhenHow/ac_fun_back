@@ -1,77 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bee7315a-f158-4294-83fd-f2ff0c36a227" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php" afterDir="false" />
+    <list default="true" id="bee7315a-f158-4294-83fd-f2ff0c36a227" name="Default Changelist" comment="initial">
+      <change afterPath="$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/common/logic/WordLogic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/common/map/CommonMap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/wxapp/controller/WordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/words/1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/words/2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/words/3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ac_fun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ac_fun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/RedisModel/TokenModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/RedisModel/TokenModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/logic/UserLogic.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/logic/UserLogic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/map/UserRoleMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/map/UserRoleMap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/common/model/UserInfoModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/model/UserInfoModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/common/map/ErrorCodeMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/common/map/ErrorCodeMap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/wxapp/controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/wxapp/controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/controller/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/controller/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/conf/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/conf/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/cache/74/4d95ef1b2f2cf5c95a256fb96058a5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/cache/bb/bdabdbfabd2d2f11482fbafd84535f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/api/log/201808/30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/17/55347e5f6a762b84a3f6512a3e4e53.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/1a/64788d489a00f94589600c5d122b0e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/30/6cdd0f309661b0e0e78338d8e94de3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/74/4d95ef1b2f2cf5c95a256fb96058a5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/b6/1541208db7fa7dba42c85224405911.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/bb/bdabdbfabd2d2f11482fbafd84535f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/cache/c3/0b008a754ac7f1eeef085057ee3106.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/1d3fc67a2ea98d753b710067ae45b0f0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/22db9d29482dd2e7f00c05d76f583ff3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/242d539b976acf7acd971b06d457a5ed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/27e7f80addbea27d18fcd0b97a9507de.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/2fcb0bbd7df03956ca209ec4be664e73.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/326f6f03ffedef1b48f840622536014e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/363fd1636bf02fb594e75b0d53cf7818.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/3bda9fab9b145826ce23a708c4eb1cb4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/3d27b25bd371cf7b1902efbf587e10f5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/3f0a39160cff1980f6ca89e555bba321.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/460f6b3b021bdf988fe208c010397a87.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/4a74fe76f4d3e3982551658fd65c1ba2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/4df5c743a2f8b522010cb8923b14169f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/54c10a556dce637f9c08cc6d62455686.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/56e703279544a02fa407b84745b19df6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/5ad169d5396991ca463f1b9ee921d4ca.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/5eecfdc4f35cfab93e54556f6fc59cd2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/648274507e32f53dfca261d5f2338a2c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/64a81cadcb0ad3a6cf659eafc73f9364.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/70c2418e3f9fc1b7a39e8ad6d6df8d23.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/7441ab97f8d065b4bd6c4d46f629bdf1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/7d1dae1c8162b36257e3c0cfae2d8187.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/8a0ec49f30aff77c0fee55bfa8b75e89.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/8d682f44954587794d7e3135b333fd1e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/981b58c0c07375857ab578a148c07a71.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/9ca2c69802d491082270d861ee6ba5af.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/a29b6e80c4da009098ffc15d77f72ad7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/be3a5c8a6761210d8507916b132b9175.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/c13df3482ebea982cbbd1cda6dcabcb9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/c3ca79d2e679fb9bc0e4a233e83a23f3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/cc52635ccc3e63f68439c72665abfdd2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/d74914cb6787f80c3518a1d3afa98cdc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/de572706da55c2dd6e107f8ee9a16f19.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/e0909d314b30b435eb439b6c11785ca7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/e1af1ce0d3409789d83222d170f4f079.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/e342e119670f7bf1f896344f52de98b9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/e7114cc9db94b1fbb4f0f5534112fdab.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/f0081ec25722520ff597327818556a39.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/f29edcd4fa441e93b489b5315bd2cd1d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/fa45cd83e350a2d94473abf798f85c9d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/runtime/temp/fa5189b3414205d5247a66612b411382.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplewind/cmf/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/simplewind/cmf/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,161 +60,153 @@
     <session id="1912144489">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="php" value="49" />
+          <entry key="log" value="3" />
+          <entry key="php" value="123" />
           <entry key="sql" value="1" />
+          <entry key="think" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="49" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PHP" value="125" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="php" value="2875" />
+          <entry key="log" value="4" />
+          <entry key="php" value="11722" />
+          <entry key="think" value="1" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2875" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PHP" value="11723" />
+          <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="5" />
+          <entry key="PHP Class.type" value="20" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.16288833">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="184" column="40" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/api/wxapp/controller/UserController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="398">
-                  <caret line="82" column="104" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/map/UserRoleMap.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="836">
-                  <caret line="43" column="99" selection-start-line="43" selection-start-column="99" selection-end-line="43" selection-end-column="99" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5654">
-                  <caret line="263" column="25" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/simplewind/cmf/common.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="32098">
-                  <caret line="1474" selection-start-line="1474" selection-end-line="1474" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="572">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3608">
-                  <caret line="177" column="39" selection-start-line="177" selection-start-column="32" selection-end-line="177" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/model/UserModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2068">
-                  <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/common/model/CommonModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5720">
-                  <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/common/logic/WordLogic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1232">
+              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+              <folding>
+                <element signature="e#116#145#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4620">
+              <caret line="218" column="30" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/wxapp/controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1034">
+              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/api/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/common/RedisModel/TokenModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -281,6 +217,8 @@
       <find>addUser</find>
       <find>UserRoleMap</find>
       <find>buildRegData</find>
+      <find>make:</find>
+      <find>redis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,20 +230,44 @@
         <option value="$PROJECT_DIR$/api/common/RedisModel/GetAndSetableInterface.php" />
         <option value="$PROJECT_DIR$/api/common/RedisModel/GetAndSettableInterface.php" />
         <option value="$PROJECT_DIR$/api/wxapp/controller/PublicController.php" />
-        <option value="$PROJECT_DIR$/api/config.php" />
         <option value="$PROJECT_DIR$/simplewind/cmf/common.php" />
         <option value="$PROJECT_DIR$/app/user/controller/TestController.php" />
-        <option value="$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php" />
         <option value="$PROJECT_DIR$/data/conf/database.php" />
         <option value="$PROJECT_DIR$/api/common/logic/UserLogic.php" />
         <option value="$PROJECT_DIR$/api/common/model/UserInfoModel.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/api/common.php" />
         <option value="$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php" />
         <option value="$PROJECT_DIR$/api/common/RedisModel/TokenModel.php" />
         <option value="$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php" />
         <option value="$PROJECT_DIR$/api/common/map/UserRoleMap.php" />
         <option value="$PROJECT_DIR$/api/wxapp/controller/UserController.php" />
+        <option value="$PROJECT_DIR$/app/script/controller/WordController.php" />
+        <option value="$PROJECT_DIR$/app/script/command/word.php" />
+        <option value="$PROJECT_DIR$/app/script/command.php" />
+        <option value="$PROJECT_DIR$/public/info.php" />
+        <option value="$PROJECT_DIR$/think" />
+        <option value="$PROJECT_DIR$/data/runtime/log/201809/22_cli.log" />
+        <option value="$PROJECT_DIR$/app/common/service/ExcelService.php" />
+        <option value="$PROJECT_DIR$/api/common/map/ErrorCodeMap.php" />
+        <option value="$PROJECT_DIR$/app/common/model/BaseModel.php" />
+        <option value="$PROJECT_DIR$/app/common/model/WordsModel.php" />
+        <option value="$PROJECT_DIR$/app/common.php" />
+        <option value="$PROJECT_DIR$/app/common/model/WordListMapModel.php" />
+        <option value="$PROJECT_DIR$/app/common/model/WordBookListModel.php" />
+        <option value="$PROJECT_DIR$/app/common/model/WordBooksModel.php" />
+        <option value="$PROJECT_DIR$/api/common/map/CommonMap.php" />
+        <option value="$PROJECT_DIR$/api/config.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/app/common/service/HttpHelper.php" />
+        <option value="$PROJECT_DIR$/app/common/service/HttpResponse.php" />
+        <option value="$PROJECT_DIR$/app/script/command/WordScript.php" />
+        <option value="$PROJECT_DIR$/api/wxapp/controller/WordController.php" />
+        <option value="$PROJECT_DIR$/app/common/RedisModel/BookListRedisModel.php" />
+        <option value="$PROJECT_DIR$/app/common/RedisModel/BaseRedisModel.php" />
+        <option value="$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php" />
+        <option value="$PROJECT_DIR$/public/api/index.php" />
+        <option value="$PROJECT_DIR$/api/common/logic/WordLogic.php" />
+        <option value="$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php" />
       </list>
     </option>
   </component>
@@ -327,7 +289,7 @@
       <server host="ac.com" id="9e684409-b8e6-4433-af73-a24527bbe352" name="ac.com" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/simplewind/vendor/topthink/think-captcha" />
       <path value="$PROJECT_DIR$/simplewind/vendor/topthink/think-image" />
@@ -345,11 +307,12 @@
       <path value="$PROJECT_DIR$/simplewind/vendor/electrolinux/phpquery" />
       <path value="$PROJECT_DIR$/simplewind/vendor/topthink/think-helper" />
       <path value="$PROJECT_DIR$/simplewind/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/simplewind/vendor/Excel/PHPExcel" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="290" />
-    <option name="y" value="265" />
+    <option name="x" value="30" />
+    <option name="y" value="85" />
     <option name="width" value="1400" />
     <option name="height" value="780" />
   </component>
@@ -370,88 +333,47 @@
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="think" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="think" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
               <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ac_fun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ac_fun" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="simplewind" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="think" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -462,7 +384,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sp/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../szhd/klmy-new" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -470,6 +392,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\www\ac_fun\words" />
+      <recent name="D:\workspace\www\ac_fun\app\common\service" />
+      <recent name="D:\workspace\www\ac_fun\simplewind\vendor" />
       <recent name="D:\workspace\www\ac_fun\api" />
     </key>
   </component>
@@ -484,6 +409,11 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/think" scriptParameters="s">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\dwj\AppData\Roaming\Subversion</configuration>
@@ -507,6 +437,16 @@
       <workItem from="1536592663116" duration="1493000" />
       <workItem from="1537024619532" duration="3621000" />
       <workItem from="1537059595328" duration="369000" />
+      <workItem from="1537372045336" duration="1899000" />
+      <workItem from="1537549836950" duration="598000" />
+      <workItem from="1537590416624" duration="19191000" />
+      <workItem from="1537764963124" duration="2958000" />
+      <workItem from="1537768029262" duration="12227000" />
+      <workItem from="1537785871395" duration="9953000" />
+      <workItem from="1537972317552" duration="8276000" />
+      <workItem from="1538491545527" duration="4486000" />
+      <workItem from="1538743710377" duration="7290000" />
+      <workItem from="1540095935884" duration="1337000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1535786286941</created>
@@ -522,13 +462,20 @@
       <option name="project" value="LOCAL" />
       <updated>1535786353218</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <created>1537372260259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537372260259</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43471000" />
+    <option name="totallyTimeSpent" value="111686000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -539,24 +486,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1461126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27659574" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27659574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.32765958" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32765958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -578,11 +524,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php</url>
-          <line>26</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/api/wxapp/controller/UserController.php</url>
           <line>64</line>
           <option name="timeStamp" value="4" />
@@ -593,20 +534,50 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/index.php</url>
-          <line>12</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php</url>
           <line>23</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/script/command/WordScript.php</url>
+          <line>133</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/script/command/WordScript.php</url>
+          <line>94</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/script/command/WordScript.php</url>
+          <line>190</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/api/common/logic/WordLogic.php</url>
+          <line>69</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/api/common/logic/WordLogic.php</url>
+          <line>89</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>$objWorksheet-&gt;getTitle()</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$objWorksheet-&gt;getTitle();</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Config::get('OPEN_CACHE')</expression-string>
         <language-id>PHP</language-id>
@@ -615,177 +586,145 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b187337-0bfc-4c31-a482-592e2aaef0ac/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/Driver.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/controller/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/simplewind/extend/wxapp/aes/WXBizDataCrypt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/GetAndSettableInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="308">
+          <caret line="14" column="7" selection-start-line="13" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/wxapp/controller/PublicController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="158" column="40" lean-forward="true" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
+        <state relative-caret-position="396">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/app/user/controller/TestController.php">
+    <entry file="file://$PROJECT_DIR$/simplewind/vendor/Excel/PHPExcel/Cell.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/vendor/Excel/PHPExcel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="-308">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/debug.php">
+    <entry file="file://$PROJECT_DIR$/simplewind/vendor/Excel/PHPExcel/Cell/DataType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/release.php">
+    <entry file="file://$PROJECT_DIR$/../szhd/whhd_cms/Application/Common/Service/BaseService.class.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/conf/route.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/conf/database.php">
+    <entry file="file://$PROJECT_DIR$/api/user/model/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="-178" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/model/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/debug.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/database.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/route.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tags.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/command.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/wxapp/controller/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/runtime/api/cache/74/4d95ef1b2f2cf5c95a256fb96058a5.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/runtime/cache/1a/64788d489a00f94589600c5d122b0e.php" />
-    <entry file="file://$PROJECT_DIR$/api/command.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
+    <entry file="file://$PROJECT_DIR$/simplewind/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="-4049">
+          <caret line="1557" selection-start-line="1557" selection-end-line="1557" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/think">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/runtime/log/201809/22_cli.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/model/RoleUserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="621" column="48" lean-forward="true" selection-start-line="621" selection-start-column="48" selection-end-line="621" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="617" selection-start-line="617" selection-end-line="617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/service/ExcelService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3718">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/runtime/log/201809/24_cli.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/model/WordListMapModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/model/WordBookListModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" column="5" selection-start-line="14" selection-start-column="24" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/model/WordBooksModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="550">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/cmf/controller/RestBaseController.php">
+    <entry file="file://$PROJECT_DIR$/app/common/model/WordsModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5676">
-          <caret line="272" selection-start-line="272" selection-end-line="272" />
+        <state relative-caret-position="352">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2838">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/api/common/map/DeviceTypeMap.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
+    <entry file="file://$PROJECT_DIR$/api/common/map/ErrorCodeMap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/model/UserInfoModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/TokenModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="184" column="40" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/wxapp/controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="82" column="104" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/map/UserRoleMap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="43" column="99" selection-start-line="43" selection-start-column="99" selection-end-line="43" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5654">
-          <caret line="263" column="25" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/cmf/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32098">
-          <caret line="1474" selection-start-line="1474" selection-end-line="1474" />
+        <state relative-caret-position="462">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -796,31 +735,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
+    <entry file="file://$PROJECT_DIR$/public/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3608">
-          <caret line="177" column="39" selection-start-line="177" selection-start-column="32" selection-end-line="177" selection-end-column="39" />
+        <state relative-caret-position="154">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/model/UserModel.php">
+    <entry file="file://$PROJECT_DIR$/app/script/command/WordScript.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        <state relative-caret-position="333">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+          <folding>
+            <element signature="e#116#148#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
+    <entry file="file://$PROJECT_DIR$/app/common/service/HttpHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="242">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/service/HttpResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/map/CommonMap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="266" column="20" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/map/UserRoleMap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/common/model/CommonModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5720">
-          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
+        <state relative-caret-position="220">
+          <caret line="17" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/map/UserDataTypeMap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/model/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/RedisModel/BaseRedisModel.php" />
+    <entry file="file://$PROJECT_DIR$/app/common/RedisModel/BookListRedisModel.php" />
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BaseRedisModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wxapp/controller/WordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#120#151#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/logic/WordLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <folding>
+            <element signature="e#116#145#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="218" column="30" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/logic/UserLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/BookListRedisModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/TokenModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/common/RedisModel/UserInfoRedisModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wxapp/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/cache/driver/Redis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
         </state>
       </provider>
     </entry>
