@@ -24,7 +24,7 @@ class Redis extends Driver
 {
     protected $options = [
         'host'       => '47.101.60.7',
-        'port'       => 199,
+        'port'       => 1991,
         'password'   => '',
         'select'     => 0,
         'timeout'    => 0,
