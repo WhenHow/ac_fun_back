@@ -48,6 +48,12 @@ class WordLogic extends BaseLogic
     }
 
     public function getListWords($list_id){
+        $book_list_redis = new BookListRedisModel();
+        $sentence_list = $book_list_redis->getListSentence($list_id);
+        if($sentence_list){
+            return $sentence_list;
+        }
+
         $where['map.list_id'] = $list_id;
         $word_list = Db::name('WordListMap')->alias('map')
                     ->join('__WORDS__ w','w.id=map.word_id')
@@ -67,6 +73,9 @@ class WordLogic extends BaseLogic
             $ret[] = $val;
         }
 
+        if($ret){
+            $book_list_redis->setListSentence($list_id,$ret);
+        }
         return $ret;
 
     }

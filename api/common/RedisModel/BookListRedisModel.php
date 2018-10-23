@@ -12,6 +12,8 @@ namespace api\common\RedisModel;
 class BookListRedisModel extends BaseRedisModel
 {
     const BOOK_LIST_PREFIX = "BOOK_LIST_ID:";
+    const BOOK_LIST_SENTENCE_PREFIX = "BOOK_LIST_SENTENCE_ID:";
+
 
     public function __construct()
     {
@@ -36,5 +38,23 @@ class BookListRedisModel extends BaseRedisModel
 
     private function getBookListKey($book_id){
         return self::BOOK_LIST_PREFIX.$book_id;
+    }
+
+    private function getListSentenceKey($list_id){
+        return self::BOOK_LIST_SENTENCE_PREFIX.$list_id;
+    }
+
+    public function getListSentence($list_id){
+        $key_name = $this->getListSentenceKey($list_id);
+        $ret = $this->get($key_name,null);
+        if($ret){
+            $ret = json_decode($ret,true);
+        }
+        return $ret;
+    }
+
+    public function setListSentence($list_id,$sentence){
+        $key_name = $this->getListSentenceKey($list_id);
+        return $this->set($key_name,json_encode($sentence));
     }
 }
