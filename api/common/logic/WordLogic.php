@@ -72,11 +72,15 @@ class WordLogic extends BaseLogic
             $val['sentence'] = key_exists($word_id,$sentence) ? array_slice($sentence[$word_id],0,3) : [];
             $ret[] = $val;
         }
+        //获得单词本信息
+        $book_list_info = Db::name("WordBookList")->where('id',$list_id)->find();
+        $book_name = $book_list_info ? ($book_list_info['list_alias'] ? $book_list_info['list_alias'] : $book_list_info['name']) : "";
 
+        $data = ["book_name"=>$book_name,"list"=>$ret];
         if($ret){
-            $book_list_redis->setListSentence($list_id,$ret);
+            $book_list_redis->setListSentence($list_id,$data);
         }
-        return $ret;
+        return $data;
 
     }
 
