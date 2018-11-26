@@ -8,10 +8,13 @@
 
 namespace api\wxapp\controller;
 
+use api\common\logic\UserLogic;
 use api\common\map\ErrorCodeMap;
 use api\common\service\WxService;
 use cmf\controller\RestBaseController;
+use think\Db;
 use think\Validate;
+use wxapp\aes\ErrorCode;
 
 class BaseController extends RestBaseController
 {
@@ -20,6 +23,10 @@ class BaseController extends RestBaseController
      * @param null $request
      * @return mixed
      */
+
+    protected $current_agency_id = 0;
+    protected $current_user_info = null;
+
     protected function getHeader($request = null)
     {
         $request = !$request ? $this->request : null;
@@ -87,4 +94,83 @@ class BaseController extends RestBaseController
         return $error_msg;
     }
 
+
+    protected function getUserIdByToken($token)
+    {
+        $map['token'] = $token;
+        $map['expire_time'] = array('egt',time());
+        $ret = Db::name('UserToken')->where($map)->find();
+        return $ret ? $ret['user_id'] : 0;
+    }
+
+    protected function checkToken(){
+        $header = $this->getHeader();
+        $user_id = $this->getUserIdByToken($header['token']);
+        if(!$user_id)
+        {
+            $this->error(setReturnData(ErrorCodeMap::USER_TOKEN_EXPIRE));
+        }
+        return $user_id;
+    }
+
+    /**
+     * 根据token获得用户信息
+     * @param $token
+     * @return null
+     */
+    protected function getUserInfoByToken($token){
+        $header = $this->getHeader();
+        if(!$header){
+            return null;
+        }
+        $user_logic = new UserLogic();
+        return $user_logic->getUserInfoByToken($token,$header['device_type']);
+    }
+
+    /**
+     * 权限校验
+     * @param $role_ids
+     */
+    protected function rightCheck($role_ids){
+        $user_id = $this->checkToken();
+        //获得用户角色
+        $where['user_id'] = $user_id;
+        $user_roles = Db::name('RoleUser')->where($where)->column('role_id');
+        if(!$user_roles){
+            $this->error(setReturnData(ErrorCodeMap::HAVE_NO_RIGHT));
+        }
+        if(!is_array($role_ids)){
+            $role_ids = [$role_ids];
+        }
+
+        if(!array_intersect($user_roles,$role_ids)){
+            $this->error(setReturnData(ErrorCodeMap::HAVE_NO_RIGHT));
+        }
+    }
+
+    protected function getCurrentUserInfo(){
+        if($this->current_user_info){
+            return $this->current_user_info;
+        }
+
+        $user_id = $this->checkToken();
+        $user_logic = new UserLogic();
+        $this->current_user_info = $user_logic->getAllUserInfo($user_id);
+        return $this->current_user_info;
+    }
+
+    protected function getCurrentAgencyId(){
+        if($this->current_agency_id){
+            return $this->current_agency_id;
+        }
+
+        $user_info = $this->getCurrentUserInfo();
+        return $this->current_agency_id = $user_info['user_extra']['agency_id'];
+    }
+
+    protected function getPageParam(){
+        $data['p'] = intval($this->request->param('p',1));
+        $data['l'] = intval($this->request->param('l',10));
+        return $data;
+    }
 }

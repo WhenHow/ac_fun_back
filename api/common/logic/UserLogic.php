@@ -70,7 +70,38 @@ class UserLogic extends BaseLogic
         return $data;
     }
 
+    public function getUserIdByToken($token,$device_type)
+    {
+        $map['token'] = $token;
+        $map['device_type'] = $device_type;
+        $map['expire_time'] = array('egt',time());
+        $ret = Db::name('UserToken')->where($map)->find();
+        return $ret ? $ret['user_id'] : 0;
+    }
 
+
+    public function getUserInfoByToken($token,$device_type)
+    {
+        $user_id = $this->getUserIdByToken($token,$device_type);
+        if(!$user_id)
+        {
+            return null;
+        }
+
+        $user_info = $this->getAllUserInfo($user_id,$device_type);
+        $user_info['token'] = $token;
+        return $user_info;
+    }
+
+    public function getAllUserInfo($user_id,$device_type=""){
+        //获得用户相关信息
+        $data['user_roles'] = $this->getUserRoles($user_id);
+        $data['third_user_info'] = $device_type ? $this->getThirdUserInfo($user_id,['openid','union_id','third_party'],$device_type) : null;
+        $data['user_base'] = $this->getUserInfoById($user_id,['avatar','mobile','sex','user_nickname','user_status','user_type']);
+        $data['user_extra'] = $this->getUserExtraInfo($user_id,['address','agency_id','avatar_img_id','contact_tel','job_title','real_name','section_name','unit_id']);
+        $data['user_id'] = $user_id;
+        return $data;
+    }
     /**
      * 获得用户信息
      * @param $id
