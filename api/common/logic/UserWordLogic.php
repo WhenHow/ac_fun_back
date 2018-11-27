@@ -9,6 +9,8 @@
 namespace api\common\logic;
 
 
+use api\common\model\WordSentenceModel;
+use api\common\model\WordsModel;
 use think\Db;
 
 class UserWordLogic extends BaseLogic
@@ -25,7 +27,25 @@ class UserWordLogic extends BaseLogic
         if(!$ids){
             return null;
         }
+
+        return $this->getWordsBriefFromDb($ids);
+    }
+
+    private function getWordsBriefFromDb($word_ids){
+        $word_model = new WordsModel();
         //获得单词
+        $words = $word_model->getWordsBrief($word_ids);
+        if(!$words){
+            return null;
+        }
+        //获得句子
+        $sentence_model = new WordSentenceModel();
+        $sentence_list = $sentence_model->getWordsSentence($word_ids);
+        foreach ($words as &$word){
+            $word_id = $word['id'];
+            $word['sentence'] = isset($sentence_list[$word_id]) ? $sentence_list[$word_id] : [];
+        }
+        return $words;
     }
 
     /**
