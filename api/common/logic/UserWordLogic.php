@@ -75,12 +75,13 @@ class UserWordLogic extends BaseLogic
      * @param $word_num
      * @return array
      */
-    private function getRememberWordIds($book_id,$start_map_id,$word_num){
-        $where['id'] = array(">",$start_map_id);
+    private function getRememberWordIds($book_id,$start_map_id,$word_num)
+    {
+        $where['id'] = array(">", $start_map_id);
         $where['book_id'] = $book_id;
-        return Db::name('WordListMap')->where($where)->group('word_id')->order('id asc')->limit($word_num)->column('word_id');
+        $sub_query = Db::name("WordListMap")->group('word_id')->buildSql();
+        return Db::table($sub_query." a")->where($where)->limit($word_num)->column('word_id');
     }
-
     /**
      * 获得最近的一条背诵任务
      * @param $user_id

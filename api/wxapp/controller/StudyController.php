@@ -29,7 +29,7 @@ class StudyController extends BaseController
 
     public function remember(){
         $book_id = $this->request->param('book_id',1);
-        $word_count = $this->request->param('count',10);
+        $word_count = $this->request->param('count',100);
 
         $word_logic = new UserWordLogic();
         $word_list = $word_logic->getUserTodayWords($this->user_id,$book_id,$word_count);

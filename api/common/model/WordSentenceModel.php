@@ -22,13 +22,19 @@ class WordSentenceModel extends CommonModel
     {
         $ret = [];
 
-        $where['word_id'] = ["in", $word_ids];
+        /*$where['word_id'] = ["in", $word_ids];
 
-        $list = Db::name('WordSentence')->alias('a')->where($sentence_limit, '>', function ($query) {
-            $query->table('WordSentence')->alias('b')
-                ->where('a.word_id', '=', 'b.word_id')
-                ->where('a.id', '>', 'b.id')->count();
-        })->where($where)->field("word_id,sentence,translation")->select();
+        $sub_query = Db::name('WordSentence')->alias('b')
+                        ->where('a.word_id', '=', 'b.word_id')
+                        ->where('a.id', '>', 'b.id')->field('count(*)')->buildSql();
+
+        $list = Db::name('WordSentence')->alias('a')->where("$sentence_limit > $sub_query")->where($where)->field("word_id,sentence,translation")->select();*/
+
+
+        $where['word_id'] = ["in", $word_ids];
+        $where['sort_index'] = ['elt',$sentence_limit];
+        $list = Db::name('WordSentence')->where($where)->field("word_id,sentence,translation")->select();
+
         $list = $list ? $list->toArray() : [];
 
         array_walk($list, function ($sentence) use (&$ret) {

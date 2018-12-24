@@ -9,6 +9,8 @@
 namespace api\common\model;
 
 
+use think\db\Expression;
+
 class WordsModel extends CommonModel
 {
     public function __construct($data = [])
@@ -31,7 +33,8 @@ class WordsModel extends CommonModel
         }
         $ids_str = implode(',',$ids);
         $where['id'] = array('in',$ids);
-        $ret = $this->where($where)->field($field)->order("field(id,{$ids_str})")->select();
+        $exp = new Expression("field(`id`,{$ids_str})");
+        $ret = $this->where($where)->field($field)->order($exp)->select();
         return $ret ? $ret->toArray() : null;
     }
 }
