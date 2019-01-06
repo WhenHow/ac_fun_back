@@ -32,7 +32,7 @@ class UserWordLogic extends BaseLogic
         $list = $this->getWordsBriefFromDb($ids);
         foreach($list as &$val){
             $val['remember_times'] = 0;
-            $val['is_unknown'] = 0;
+            $val['is_unknown'] = 1;
         }
         return ['list'=>$list,'date'=>$date,'word_num'=>$word_num];
     }
