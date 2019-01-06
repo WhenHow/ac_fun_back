@@ -191,6 +191,10 @@ class UserLogic extends BaseLogic
         $data['user_info'] = $this->getUserInfoById($ret['user_id']);
         return $ret ? $data : false;
     }
+    
+    public function updateAvatar($user_id,$avatar){
+        Db::name('user')->where("id",$user_id)->update(['avatar'=>$avatar]);
+    }
 
     public function getAgencyId($appid){
         $where['wxapp_appid'] = $appid;

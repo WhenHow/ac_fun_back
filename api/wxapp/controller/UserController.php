@@ -46,6 +46,11 @@ class UserController extends BaseController
         if(!$current_user){
             $this->error(['code'=>ErrorCodeMap::USER_NOT_EXIST,'msg'=>'']);
         }
+        //如果头像改变了，更新头像
+        if($current_user['user_info']['avatar']!=$wx_user_info['avatarUrl']){
+            $current_user['user_info']['avatar'] = $wx_user_info['avatarUrl'];
+            $user_logic->updateAvatar($current_user['user_info']['id'],$wx_user_info['avatarUrl']);
+        }
         //执行登陆
         $user_id = $current_user['user_info']['id'];
         $device_type = $this->getOneHeader('device_type');

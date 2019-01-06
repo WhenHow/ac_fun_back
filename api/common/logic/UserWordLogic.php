@@ -22,13 +22,15 @@ class UserWordLogic extends BaseLogic
         //获得最近一条背诵任务日志
         $last_task_log = $this->getLastUserTaskLog($user_id,$book_id);
         $last_map_id = $last_task_log ? $last_task_log['begin_book_map_id'] : 0;
+        $date = date("Y-m-d");
         //获得要背诵的单词id
         $ids = $this->getRememberWordIds($book_id,$last_map_id,$word_num);
         if(!$ids){
-            return null;
+            return ['list'=>[],'date'=>$date,'word_num'=>$word_num];
         }
 
-        return $this->getWordsBriefFromDb($ids);
+        $list = $this->getWordsBriefFromDb($ids);
+        return ['list'=>$list,'date'=>$date,'word_num'=>$word_num];
     }
 
     private function getWordsBriefFromDb($word_ids){
