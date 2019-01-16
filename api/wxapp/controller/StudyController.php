@@ -35,4 +35,9 @@ class StudyController extends BaseController
         $word_list = $word_logic->getUserTodayWords($this->user_id,$book_id,$word_count);
         return setReturnData(ErrorCodeMap::SUCCESS,'',$word_list);
     }
+
+
+    public function report_remember(){
+        //
+    }
 }

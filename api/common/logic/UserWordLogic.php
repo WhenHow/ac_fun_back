@@ -26,15 +26,18 @@ class UserWordLogic extends BaseLogic
         //获得要背诵的单词id
         $ids = $this->getRememberWordIds($book_id,$last_map_id,$word_num);
         if(!$ids){
-            return ['list'=>[],'date'=>$date,'word_num'=>$word_num];
+            return ['list'=>[],'date'=>$date,'word_num'=>$word_num,"begin"=>0,"end"=>0];
         }
 
         $list = $this->getWordsBriefFromDb($ids);
+        $begin_id = $list[0]['id'];
+        $end_id = end($list)['id'];
+
         foreach($list as &$val){
             $val['remember_times'] = 0;
             $val['is_unknown'] = 0;
         }
-        return ['list'=>$list,'date'=>$date,'word_num'=>$word_num];
+        return ['list'=>$list,'date'=>$date,'word_num'=>$word_num,"begin"=>$begin_id,"end"=>$end_id];
     }
 
     private function getWordsBriefFromDb($word_ids){
