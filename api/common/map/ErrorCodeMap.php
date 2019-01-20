@@ -25,5 +25,6 @@ class ErrorCodeMap
     const EMAIL_EXIST = '00013';//email已存在
     const AGENCY_NOT_EXIST = '00014';//机构不存在
     const DATA_EXIST = "00015";//数据已存在
+    const ALREADY_REMEMBERED_TODAY = "00016";//今天已经背诵过单词
 
 }

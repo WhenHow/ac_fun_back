@@ -30,3 +30,13 @@ function setReturnData($code,$msg = '',$data = ''){
     $status = $code == 1 ? true : false;
     return ['code'=>$code,'msg'=>$msg,'data'=>$data,'status'=>$status];
 }
+
+function getDateDetail($time_stamp){
+    $ret['year'] = date("Y",$time_stamp);
+    $ret['month'] = intval(date("m",$time_stamp));
+    $ret['day'] = intval(date("d",$time_stamp));
+    $ret['week'] = intval(date("W",$time_stamp));
+    $ret['week_day'] = intval(date("w",$time_stamp));
+
+    return $ret;
+}
