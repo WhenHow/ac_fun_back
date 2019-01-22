@@ -39,9 +39,10 @@ class StudyController extends BaseController
 
         $year = $this->request->param('year',$current_year);
         $month = $this->request->param('month',$current_month);
-
+        //获得背诵数据
         $remember_map['year'] = $year;
         $remember_map['month'] = $month;
+        $remember_map['user_id'] = $this->user_id;
         $list = Db::name("TaskLog")->where($remember_map)->column("create_date,real_word_num,year,month,day","day");
         //获得当前月份有多少天
         $last_day_in_month = date("d",strtotime("$year-$month-01 +1 month -1 day"));
@@ -63,6 +64,14 @@ class StudyController extends BaseController
 
         $word_list = $word_logic->getUserTodayWords($this->user_id,$book_id,$word_count);
         return setReturnData(ErrorCodeMap::SUCCESS,'',$word_list);
+    }
+
+    public function review(){
+
+    }
+
+    public function report_review(){
+
     }
 
 
