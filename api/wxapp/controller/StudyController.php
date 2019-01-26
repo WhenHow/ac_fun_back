@@ -49,7 +49,7 @@ class StudyController extends BaseController
         $end_map_id = $this->request->param('end_map_id',0);
 
         $forget_words_ids = $this->request->param('forget_words',"");
-        $forget_words_ids = explode(",",$forget_words_ids);
+        $forget_words_ids = $forget_words_ids ? explode(",",$forget_words_ids) : [];
 
         $word_logic = new UserWordLogic();
         //检查今天是否已经背诵过单词
