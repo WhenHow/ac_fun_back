@@ -12,6 +12,7 @@ namespace api\wxapp\controller;
 use api\common\logic\UserWordLogic;
 use api\common\map\ErrorCodeMap;
 use app\common\model\TaskLogModel;
+use think\Db;
 use think\Request;
 
 class StudyController extends BaseController
@@ -28,6 +29,33 @@ class StudyController extends BaseController
 
     }
 
+    /**
+     * 获得每月学习数据
+     * @return array
+     */
+    public function user_month_statistics(){
+        $current_year = date("Y");
+        $current_month = date("m");
+
+        $year = $this->request->param('year',$current_year);
+        $month = $this->request->param('month',$current_month);
+        //获得背诵数据
+        $remember_map['year'] = $year;
+        $remember_map['month'] = $month;
+        $remember_map['user_id'] = $this->user_id;
+        $list = Db::name("TaskLog")->where($remember_map)->column("create_date,real_word_num,year,month,day","day");
+        //获得当前月份有多少天
+        $last_day_in_month = date("d",strtotime("$year-$month-01 +1 month -1 day"));
+        //遍历数据
+        $ret = [];
+        for ($day = 1; $day<=$last_day_in_month; $day++){
+            $remember_num = isset($list[$day]) ? $list[$day]['real_word_num'] : 0;
+            $review_num = 0;
+            $ret[] = ["remember"=>$remember_num,"review"=>$review_num,'day'=>$day,"date"=>"$year-$month-$day"];
+        }
+        return setReturnData(ErrorCodeMap::SUCCESS,"",$ret);
+    }
+
     public function remember(){
         $book_id = $this->request->param('book_id',1);
         $word_count = $this->request->param('count',100);
@@ -36,6 +64,14 @@ class StudyController extends BaseController
 
         $word_list = $word_logic->getUserTodayWords($this->user_id,$book_id,$word_count);
         return setReturnData(ErrorCodeMap::SUCCESS,'',$word_list);
+    }
+
+    public function review(){
+
+    }
+
+    public function report_review(){
+
     }
 
 
