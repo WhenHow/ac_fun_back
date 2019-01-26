@@ -47,12 +47,20 @@ class StudyController extends BaseController
         //获得当前月份有多少天
         $last_day_in_month = date("d",strtotime("$year-$month-01 +1 month -1 day"));
         //遍历数据
-        $ret = [];
+        $data = [];
+        $study_days = 0;
         for ($day = 1; $day<=$last_day_in_month; $day++){
             $remember_num = isset($list[$day]) ? $list[$day]['real_word_num'] : 0;
             $review_num = 0;
-            $ret[] = ["remember"=>$remember_num,"review"=>$review_num,'day'=>$day,"date"=>"$year-$month-$day"];
+            $is_study_today = 0;
+            if($remember_num  || $review_num){
+                $study_days++;
+                $is_study_today = 1;
+            }
+            $data[] = ["is_study_today"=>$is_study_today,"remember"=>$remember_num,"review"=>$review_num,'day'=>$day,"date"=>date("Y-m-d",strtotime("$year-$month-$day"))];
         }
+
+        $ret = ["study_days"=>$study_days,'detail'=>$data];
         return setReturnData(ErrorCodeMap::SUCCESS,"",$ret);
     }
 
