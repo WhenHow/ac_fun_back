@@ -9,6 +9,7 @@
 namespace api\wxapp\controller;
 
 
+use api\common\logic\ReviewLogic;
 use api\common\logic\UserWordLogic;
 use api\common\map\ErrorCodeMap;
 use app\common\model\TaskLogModel;
@@ -75,11 +76,43 @@ class StudyController extends BaseController
     }
 
     public function review(){
+        $review_logic = new ReviewLogic();
+        $task_detail = $review_logic->getTodayReviewTaskDetail($this->user_id);
+        if(!$task_detail||!$task_detail['word_ids']){
+            return setReturnData(ErrorCodeMap::SUCCESS,"",[]);
+        }
 
+        $word_logic = new UserWordLogic();
+        $data['list'] = $word_logic->getWordsBriefFromDb($task_detail['word_ids']);
+        foreach($data['list'] as &$val){
+            $val['remember_times'] = 0;
+            $val['is_unknown'] = 0;
+        }
+        $data['remember_tasks'] = $task_detail['task_ids'];
+        $data['word_num'] = count($data['list']);
+        $data['token'] = md5(implode(",",$data['remember_tasks']));
+        return setReturnData(ErrorCodeMap::SUCCESS,"",$data);
     }
 
     public function report_review(){
+        $forget_words_ids = $this->request->param('forget_words',"");
+        $forget_words_ids = $forget_words_ids ? explode(",",$forget_words_ids) : [];
 
+        $token = $this->request->param("token","");
+        //获得今日需要复习的单词
+        $review_logic = new ReviewLogic();
+        $task_detail = $review_logic->getTodayReviewTaskDetail($this->user_id);
+        if(!$task_detail||!$task_detail['word_ids']){
+            return setReturnData(ErrorCodeMap::ALREADY_REVIEW_TODAY);
+        }
+        //检查token是否正确
+        $remember_token = md5(implode(",",$task_detail['task_ids']));
+        if($remember_token != $token){
+            return setReturnData(ErrorCodeMap::INVALIDATE_PARAM);
+        }
+
+        $review_logic->reportReview($this->user_id,$task_detail,$forget_words_ids);
+        return setReturnData(ErrorCodeMap::SUCCESS);
     }
 
 

@@ -55,3 +55,14 @@ function getDateDetail($time_stamp){
 
     return $ret;
 }
+
+function array_column_search($array,$column_name,$keyword){
+    $ret = false;
+    foreach ($array as $key => $val){
+        if($val[$column_name] == $keyword){
+            $ret = $key;
+        }
+    }
+
+    return $ret;
+}

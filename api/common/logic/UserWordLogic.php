@@ -86,7 +86,7 @@ class UserWordLogic extends BaseLogic
         return $detail_model->multiAdd($detail_list);
     }
 
-    private function getWordsBriefFromDb($word_ids,$need_sentence = true){
+    public function getWordsBriefFromDb($word_ids,$need_sentence = true){
         $word_model = new WordsModel();
         //获得单词
         $words = $word_model->getWordsBrief($word_ids);
