@@ -45,6 +45,13 @@ class StudyController extends BaseController
         $remember_map['month'] = $month;
         $remember_map['user_id'] = $this->user_id;
         $list = Db::name("TaskLog")->where($remember_map)->column("create_date,real_word_num,year,month,day","day");
+
+
+        $review_map['create_year'] = $year;
+        $review_map['create_month'] = $month;
+        $review_map['user_id'] = $this->user_id;
+        $review_list = Db::name("UserReviewTask")->where($review_map)->column("create_date,word_num,create_year,create_month,create_day","create_day");
+
         //获得当前月份有多少天
         $last_day_in_month = date("d",strtotime("$year-$month-01 +1 month -1 day"));
         //遍历数据
@@ -52,7 +59,7 @@ class StudyController extends BaseController
         $study_days = 0;
         for ($day = 1; $day<=$last_day_in_month; $day++){
             $remember_num = isset($list[$day]) ? $list[$day]['real_word_num'] : 0;
-            $review_num = 0;
+            $review_num = isset($review_list[$day]) ? $review_list[$day]['word_num'] : 0;;
             $is_study_today = 0;
             if($remember_num  || $review_num){
                 $study_days++;
