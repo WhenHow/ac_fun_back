@@ -133,7 +133,7 @@ class ReviewLogic extends BaseLogic
     }
 
     private function addReviewTask($user_id,$word_num){
-        if(!$user_id||!$word_num){
+        if(!$user_id){
             return false;
         }
 
@@ -168,8 +168,12 @@ class ReviewLogic extends BaseLogic
     }
 
     private function addReviewWordDetail($review_id,$user_id,$task_ids,$word_ids){
-        if(!$task_ids||!$word_ids){
+        if(!$task_ids){
             return false;
+        }
+
+        if(!$word_ids){
+            return true;
         }
 
         $where['log_id'] = array("in",$task_ids);
@@ -222,7 +226,10 @@ class ReviewLogic extends BaseLogic
             Db::name("UserTaskDetail")->where("log_id",$task['id'])->update(["current_process"=>$current_process_id]);
         }
 
-        Db::name("UserTaskDetail")->where(["user_id"=>$user_id,"word_id"=>array("in",$word_ids)])->inc("review_times");
+        if($word_ids){
+            Db::name("UserTaskDetail")->where(["user_id"=>$user_id,"word_id"=>array("in",$word_ids)])->inc("review_times");
+        }
+
         if($forget_word_ids){
             Db::name("UserTaskDetail")->where(["user_id"=>$user_id,"word_id"=>array("in",$forget_word_ids)])->inc("forget_times");
             Db::name("ReviewDetail")->where(["review_log_id"=>$review_id,"word_id"=>array("in",$forget_word_ids)])->update(["is_remember"=>0]);

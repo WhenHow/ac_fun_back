@@ -85,6 +85,11 @@ class StudyController extends BaseController
     public function review(){
         $review_logic = new ReviewLogic();
         $task_detail = $review_logic->getTodayReviewTaskDetail($this->user_id);
+
+        if($task_detail && $task_detail['task_ids'] && !$task_detail['word_ids']){
+            $review_logic->reportReview($this->user_id,$task_detail,null);
+        }
+
         if(!$task_detail||!$task_detail['word_ids']){
             return setReturnData(ErrorCodeMap::SUCCESS,"",[]);
         }
