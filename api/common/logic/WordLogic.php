@@ -74,7 +74,7 @@ class WordLogic extends BaseLogic
         }
         //获得单词本信息
         $book_list_info = Db::name("WordBookList")->where('id',$list_id)->find();
-        $book_name = $book_list_info ? ($book_list_info['list_alias'] ? $book_list_info['list_alias'] : $book_list_info['name']) : "";
+        $book_name = $book_list_info ? ($book_list_info['name'] ? $book_list_info['name'] : $book_list_info['list_alias']) : "";
 
         $data = ["book_name"=>$book_name,"list"=>$ret];
         if($ret){
