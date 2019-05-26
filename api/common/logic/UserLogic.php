@@ -15,6 +15,7 @@ use api\common\model\User;
 use api\common\model\UserInfoModel;
 use api\common\model\UserModel;
 use api\common\RedisModel\UserInfoRedisModel;
+use app\common\model\UserCheckMobileMapModel;
 use think\Db;
 class UserLogic extends BaseLogic
 {
@@ -208,6 +209,13 @@ class UserLogic extends BaseLogic
     }
 
     public function addUser($user_base,$user_info,$role_id,$third_user = null){
+
+
+        $need_check_mobile_map = true;
+        if($need_check_mobile_map && !$this->check_mobile_map($user_info['contact_tel'])){
+            return setReturnData(ErrorCodeMap::REG_MOBILE_INVALIDATE);
+        }
+
         Db::startTrans();
 
         $user_base_ret = $this->addUserBase($user_base);
@@ -233,6 +241,10 @@ class UserLogic extends BaseLogic
         if($role_ret['code']!=ErrorCodeMap::SUCCESS){
             Db::rollback();
             return $role_ret;
+        }
+
+        if($need_check_mobile_map){
+            $this->check_mobile_map($user_info['contact_tel']);
         }
 
         cmf_generate_user_token($user_base_id, $third_user['third_party']);
@@ -264,4 +276,19 @@ class UserLogic extends BaseLogic
     }
 
 
+    private function check_mobile_map($mobile){
+        $model = new UserCheckMobileMapModel();
+        $ret = $model->isMobileExist($mobile);
+        if(!$ret||$ret['is_used'] == 1){
+            return false;
+        }
+
+        return true;
+    }
+
+    public function update_check_mobile_map($mobile){
+        $where['mobile'] = $mobile;
+        $data['is_used'] = 1;
+        Db::name("UserCheckMobile")->where($where)->update($data);
+    }
 }

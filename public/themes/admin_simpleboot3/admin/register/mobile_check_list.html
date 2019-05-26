@@ -1,0 +1,78 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>手机号列表</a></li>
+        <li><a href="{:url('show_add_mobile_check')}">添加手机号</a></li>
+    </ul>
+
+    <form class="well form-inline margin-top-20" method="get">
+        状态:&nbsp;&nbsp;&nbsp;
+        <select class="form-control search_panel" name="is_used"  aria-invalid="false">
+            <option value="-1">全部</option>
+            <option value = "0" <if condition="$is_used eq 0">selected</if> >未注册</option>
+            <option value = "1" <if condition="$is_used eq 1">selected</if> >已注册</option>
+        </select>
+
+        手机号：
+        <input class="form-control search_panel"  type="text" name="mobile" style="width: 200px;" value="{$mobile}">
+
+        用户名：
+        <input class="form-control search_panel"  type="text" name="user_name" style="width: 200px;" value="{$user_name}">
+
+        <input type="button" id="search_panel_btn" class="btn btn-primary" value="搜索">
+    </form>
+
+
+    <form method="post" class="js-ajax-form">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>手机号</th>
+                <th>用户名</th>
+                <th>状态</th>
+                <th>添加时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="list" item="vo">
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.mobile}</td>
+                    <td>{$vo.user_name}</td>
+                    <td>
+                        <eq name="vo.is_used" value="1">已注册<else/>未注册</eq>
+                    </td>
+                    <td>{$vo.create_time}</td>
+                    <td><a class="js-ajax-delete" href="{:url('del_mobile_check',['id'=>$vo['id']])}">删除</a></td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    $('#search_panel_btn').click(function () {
+        var url = "{:url('','','')}";
+
+        $.each($('.search_panel'),function(index,item){
+            var key = $(item).attr('name');
+            var value = $.trim($(item).val());
+            if(!value){
+                return true;
+            }
+
+            value = encodeURIComponent(value);
+            url+="/"+key+"/"+value;
+        });
+
+        window.location.href = url;
+    });
+</script>
+</body>
+</html>
