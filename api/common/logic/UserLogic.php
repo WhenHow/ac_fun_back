@@ -289,6 +289,6 @@ class UserLogic extends BaseLogic
     public function update_check_mobile_map($mobile){
         $where['mobile'] = $mobile;
         $data['is_used'] = 1;
-        Db::name("UserCheckMobile")->where($where)->update($data);
+        Db::name("UserCheckMobileMap")->where($where)->update($data);
     }
 }
