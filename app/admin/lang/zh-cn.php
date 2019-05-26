@@ -160,6 +160,6 @@ return [
     "EMAIL_SUBJECT"                      => '邮件标题',
     "EMAIL_TEMPLATE"                     => '邮件模版',
     "EMAIL_TEMPLATE_HELP_TEXT"           => '请用{$link}代替激活链接，{$username}代替用户名',
-    "SMART_PROPERTY"                     => '智慧物业系统',
+    "SMART_PROPERTY"                     => '南京艾克教育',
 ];
 
