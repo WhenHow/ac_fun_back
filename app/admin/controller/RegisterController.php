@@ -36,7 +36,7 @@ class RegisterController extends AdminBaseController
             if(in_array($is_used,array(0,1))){
                 $query->where("is_used","=",$is_used);
             }
-        })->paginate(10);
+        })->order('id desc')->paginate(10);
 
         $page = $list->render();
         $this->assign("page", $page);

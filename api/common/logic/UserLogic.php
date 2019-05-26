@@ -244,7 +244,7 @@ class UserLogic extends BaseLogic
         }
 
         if($need_check_mobile_map){
-            $this->check_mobile_map($user_info['contact_tel']);
+            $this->update_check_mobile_map($user_info['contact_tel']);
         }
 
         cmf_generate_user_token($user_base_id, $third_user['third_party']);
